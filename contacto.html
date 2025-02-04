@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="assets/css/themebau.min.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+
 
     <!-- END: Styles -->
     <!-- jQuery -->
@@ -222,13 +225,18 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-1"></div>
-                    <div class="col-12 col-lg-8 col-xl-7 show-on-scroll" data-show-duration="600"
+                    
+                    <div class="col-12 col-lg-6 show-on-scroll" data-show-duration="600"
                         data-show-distance="20" data-show-origin="left">
-                        <h3 class="text-white mb-0" style="text-align: justify">
+                        <!-- <h3 class="text-white mb-0" style="text-align: justify">
                             Permítanos ayudarlo a resolver sus desafíos de inspección y cadena de suministro. 
                             Para cualquier consulta o pregunta, por favor llame o complete el siguiente formulario.
-                        </h3>
+                        </h3> -->
+                        <h1 class="text-white mb-0" style="text-align: justify; font-size: 1.5rem;">
+                            Permítanos ayudarlo a resolver sus desafíos de inspección y cadena de suministro. 
+                            Para cualquier consulta o pregunta, por favor llame o complete el siguiente formulario.
+                        </h1>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -236,87 +244,104 @@
         <div class="py-160">
             <div class="container">
                 <div class="row mb-n8">
-                    <div class="col-12 col-lg-10 col-xl-8 show-on-scroll" data-show-distance="10" data-show-duration="600">
-                        <h1 class="h2 mt-15 pb-4 pb-sm-0 mb-130">Consorcio Qutub Minar</h1>
+                    <div class="section-title col-12 text-center " >
+                        <h2 >Consorcio Qutub Minar</h2>
+                        <hr style="color: rgb(255, 208, 0);">
                     </div>
                 </div>
                 <div class="row gh-1 gv-2 pb-10">
-                    <div class="col-12 col-lg-4">
-                        <div class="mb-60 show-on-scroll" data-show-delay="100" data-show-distance="20" data-show-duration="500" data-show-origin="left">
-                            <p class="lead mb-17 font-weight-medium">Información:</p>
-                            <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">
-                                    <i class="fas fa-envelope" style="color: aqua"></i> 
-                                    Email: <a href="mailto:info@consorcioqutubminar.com?subject=Test%20Address%20Email">info@consorcioqutubminar.com</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-phone-alt" style="color: aqua"></i> 
-                                    Phone: <a href="callto:+3133464451">+3133464451</a>
-                                </li>                                
-                            </ul>
-                        </div>
-                        <div class="mb-60 mt-n15 show-on-scroll" data-show-delay="200" data-show-distance="20" data-show-duration="500" data-show-origin="left">
-                            <p class="lead mb-17 font-weight-medium">Dirección:</p>
-                            <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">
-                                    <i class="fas fa-map-marker-alt" style="color: aqua;"></i> 
-                                    Cajica, Colombia.
-                                </li>
-                            </ul>
+                    <div class="col-12 col-lg-4  ">
+                        <div class="form-card">
+
+                            <div class="mb-60 show-on-scroll" data-show-delay="100" data-show-distance="20" data-show-duration="500" data-show-origin="left">
+                                <div class="section-title col-12 text-sm-start">
+                                    <h2 class="display-4 mt-3 mb-3">Información:</h2>
+                                </div>
+                                <ul class="list-group borderless font-size-17">
+                                    <li class="list-group-item">
+                                        <i class="bi bi-envelope icon-hover flex-shrink-0"></i> 
+                                        Email: <a href="mailto:info@consorcioqutubminar.com?subject=Test%20Address%20Email">info@consorcioqutubminar.com</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-telephone icon-hover flex-shrink-0"></i> 
+                                        Phone: <a href="callto:+573133464451">+573133464451</a>
+                                    </li>                                
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="mb-60 mt-n15 show-on-scroll" data-show-delay="200" data-show-distance="20" data-show-duration="500" data-show-origin="left">
+                                <!-- <p class="lead mb-17 font-weight-medium">Dirección:</p> -->
+                                <div class="section-title col-12  text-sm-start">
+                                    <h2 class="display-4 mt-3 mb-3">Dirección:</h2>
+                                </div>
+                                <ul class="list-group borderless font-size-17">
+                                    <li class="list-group-item">
+                                        <i class="bi bi-geo-alt icon-hover flex-shrink-0"></i>  
+                                        Cajica, Colombia.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-8 mt-5 mt-lg-0">
-                        <h4 style="text-align: center;" data-i18n="title.form">Envíanos un correo</h4>
-                        <!-- Test:https://formspree.io/f/myzkjeda -->
-                        <form action="https://formspree.io/f/mzzzzgzo" method="POST" id="contact-form">
-                            <div class="row gh-1 gv-2">
-                                <div class=" col-lg-6">
-                                    <div class="form-group">
-                                        <!-- <i class="fas fa-user" style="color: aqua"></i> -->
-                                        <input type="text" name="name" class="form-control" id="nombre" data-i18n="input.name" placeholder="Nombre/Compañia" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                        <div class="form-card">
+                            <!-- <h4 style="text-align: center;" data-i18n="title.form">Envíanos un correo</h4> -->
+                            <div class="section-title col-12  text-sm-start">
+                                <h2 class="display-4 mt-3 mb-3">Envíanos un correo</h2>
+                            </div>
+                            <!-- Test:https://formspree.io/f/myzkjeda -->
+                            <form action="https://formspree.io/f/mzzzzgzo" method="POST" id="contact-form">
+                                <div class="row gh-1 gv-2">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control form-control-rounded" id="nombre" data-i18n="input.name" placeholder="Nombre/Compañia" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <!-- <i class="fas fa-phone" style="color: aqua"></i> -->
-                                        <input type="tel" class="form-control" name="phone" id="telefono" data-i18n="input.phone" placeholder="Telefono" data-rule="minlen:10" data-msg="Please enter a valid phone number (at least 10 digits)" pattern="[0-9]{10,}" />
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control form-control-rounded" name="phone" id="telefono" data-i18n="input.phone" placeholder="Telefono" data-rule="minlen:10" data-msg="Please enter a valid phone number (at least 10 digits)" pattern="[0-9]{10,}" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <!-- <i class="fas fa-id-card" style="color: aqua"></i> -->
-                                        <input type="text" class="form-control" name="cedula_nit" id="nit" data-i18n="input.nit" placeholder="ID/NIT" data-rule="minlen:4" data-msg="Please enter at least 4 characters for Cedula/NIT" pattern="[0-9]{4,}" />
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-rounded" name="cedula_nit" id="nit" data-i18n="input.nit" placeholder="ID/NIT" data-rule="minlen:4" data-msg="Please enter at least 4 characters for Cedula/NIT" pattern="[0-9]{4,}" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <!-- <i class="fas fa-clipboard" style="color: aqua"></i> -->
-                                        <input type="text" class="form-control" name="subject" id="sujeto" data-i18n="input.subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-rounded" name="subject" id="sujeto" data-i18n="input.subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-rounded" name="email" id="correo" data-i18n="input.email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" required />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <!-- <i class="fas fa-envelope" style="color: aqua"></i> -->
-                                        <input type="email" class="form-control" name="email" id="correo" data-i18n="input.email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" required />
+                                        <textarea class="form-control form-control-rounded" name="message" rows="5" data-rule="required" data-msg="Please write something for us" data-i18n="input.message" placeholder="Mensaje" id="mensaje" required></textarea>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <!-- <i class="fas fa-comment-dots" style="color: aqua"></i> -->
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" data-i18n="input.message" placeholder="Mensaje" id="mensaje" required></textarea>
+                                <div class="text-center">
+                                    <button class="btn btn-dark btn-with-ball mt-20" type="submit" id="enviar" data-i18n="button.send">Enviar mensaje</button>
                                 </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-dark btn-with-ball mt-20" type="submit" id="enviar" data-i18n="button.send">Enviar mensaje</button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
+          <!-- ======= Boton Whatsapp ======= -->
+  <a href="https://wa.me/573133464451?text=Hola%20me%20gustaría%20tener%20más%20información%20sobre%20sus%20servicios"
+  class="whatsapp-float" target="_blank">
+  <i class="icofont-whatsapp"></i>
+</a>
+
+<!-- ======= End Boton Whatsapp ======= -->
+ 
         <div class="swiper-slide"
         style="background-color: black; height: 670px; transform: translate3d(0px, 120px, -1200px) rotateX(0deg) rotateY(0deg); z-index: -11; transition-duration: 0ms;">
         <div class="card-wrapper h-100">

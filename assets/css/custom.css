@@ -478,4 +478,81 @@ section {
   }
 }
 
+/* contacto */
+
+.form-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+.form-control-rounded {
+  border-radius: 10px; 
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+
+button.btn-dark {
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+
+.col-12.col-lg-8 {
+  position: relative;
+}
+
+/* icono contacto */
+.icon-hover {
+  color: #3498db;
+  transition: color 0.3s ease; 
+}
+
+.icon-hover:hover {
+  color: #06131c;
+}
+
+/* Estilo del botón flotante */
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  left: 40px;
+  /*  25d366 FFF 3498db*/
+  background-color: #FFF;
+  color: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 50px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  animation: bounce 2s infinite; 
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1); 
+  background-color: #3498db; 
+  color: #FFF;  
+  border-color: #3498db;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
   
