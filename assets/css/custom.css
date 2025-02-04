@@ -252,6 +252,7 @@ section {
   text-transform: uppercase;
   position: relative;
   color: #222222;
+  white-space: nowrap;
 }
 
 .section-title h2::before,
@@ -275,6 +276,17 @@ section {
   margin: 15px 0 0 0;
 }
 
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 18px; /* Reduce tamaño en móviles */
+    line-height: 1.2; /* Ajusta el espacio entre líneas */
+    padding: 0 10px; /* Da margen interno */
+  }
+  .section-title h2::before,
+  .section-title h2::after {
+    width: 4px; /* Reduce el tamaño de las líneas en móviles */
+  }
+}
 
 
 
@@ -427,4 +439,43 @@ section {
 .more-services .card:hover .card-text {
   color: #fff;
 }
+
+
+
+/* cards */
+.card-custom {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 250px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-body {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  text-align: justify;
+  color: #fff;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card-custom {
+    min-height: 200px;
+  }
+
+  .card-body {
+    padding: 15px;
+    text-align: justify; 
+  }
+}
+
   
