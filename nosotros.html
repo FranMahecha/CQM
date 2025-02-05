@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/themebau.min.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <!-- END: Styles -->
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
@@ -211,7 +213,7 @@
     </div>
     <div class="content-wrap">
         <div class="py-160 min-vh-100 d-flex align-items-center position-relative lines-style-3">
-            <div class="line text-white"></div>
+            <!-- <div class="line text-white"></div> -->
             <div class="background bg-dark">
                 <div class="background-image jarallax" data-jarallax data-speed="0.8">
                     <img src="assets/images/about/principal.png" class="jarallax-img" alt="">
@@ -260,7 +262,9 @@
                                     <div class="d-flex justify-content-center mt-3">
                                         <a data-toggle="collapse" href="#multiCollapse" role="button"
                                             aria-expanded="false" aria-controls="multiCollapseExample1"
-                                            style="font-size: 1rem; text-decoration: underline; color: blue;">MÁS...</a>
+                                            style="font-size: 1rem; color: blue;">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
                                     </div>
 
                                     <div class="collapse multi-collapse" id="multiCollapse">
@@ -378,44 +382,38 @@
             <div class="mb-n7">
                 <div class="row gv-2 justify-content-around text-center">
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="350">
+                        <div class="number-box ">
                             <div class="number-box-title h1" style="color: white;">200</div>
                             <div class="number-box-subtitle">Prototipos de torres</div>
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="250">
+                        <div class="number-box ">
                             <div class="number-box-title h1" style="color: white;">12</div>
                             <div class="number-box-subtitle">Fabricantes</div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="350">
+                        <div class="number-box ">
                             <div class="number-box-title h1" style="color: white;">8</div>
                             <div class="number-box-subtitle">Paises</div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="150">
+                        <div class="number-box">
                             <div class="number-box-title h1" style="color: white;">3.000</div>
                             <div class="number-box-subtitle">Revisión y aprobación <br> de dibujos estructurales</div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="350">
+                        <div class="number-box ">
                             <div class="number-box-title h1" style="color: white;">12.000</div>
                             <div class="number-box-subtitle">Contenedores de <br> material transportado</div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
-                        <div class="number-box show-on-scroll" data-show-duration="500" data-show-distance="15"
-                            data-show-delay="50">
+                        <div class="number-box ">
                             <div class="number-box-title h1" style="color: white;">300.000</div>
                             <div class="number-box-subtitle">Toneladas de material</div>
                         </div>
@@ -425,14 +423,11 @@
         </div>
         <div class="py-160">
             <div class="container">
-                <div class="row gy-5">
-                    <!-- <div class="col-12 text-center text-sm-start">
-                        <h2 class="display-4 mt-3 mb-3">Certificaciones</h2>
-                    </div> -->
+                <div class="row gy-5 align-items-center"> 
                     <div class="section-title col-12 text-center text-sm-start">
                         <h2 class="display-4 mt-3 mb-3">Certificaciones</h2>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center"> 
                         <div class="feature pb-5">
                             <div class="feature-body text-center">
                                 <h5 class="feature-title ">ISO 9001:2015</h5>
@@ -449,10 +444,10 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex justify-content-center">
-                        <img class="img-fluid" src="assets/images/isoo.png" alt="ISO Certification">
+                        <img class="img-fluid" src="assets/images/about/isoo.png" alt="ISO Certification">
                     </div>
-
                 </div>
+                
 
                 <div class="row justify-content-center mt-160">
                     <div class="col-12 col-xl-10 mt-8">

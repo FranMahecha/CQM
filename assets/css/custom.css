@@ -480,12 +480,16 @@ section {
 
 /* contacto */
 
+
 .form-card {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
+}
+.form-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -551,6 +555,67 @@ button.btn-dark {
   50% {
     transform: translateY(-10px);
   }
+}
+
+/* Titulos Inicio */
+.section-title2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title2 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: white; 
+  white-space: nowrap;
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.section-title2 h2::before {
+  content: "";
+  width: 50px; 
+  height: 4px; 
+  background: rgb(211, 183, 42);
+  display: inline-block;
+}
+
+/* Boton inicio */
+
+.custom-button-container {
+  position: fixed;
+  z-index: 10;
+  bottom: 80px;
+  right: 80px;
+}
+
+.custom-button-container .nav-link { 
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  padding: 15px 30px; 
+  border-radius: 5px;
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  border: 3px solid #3498db;
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+  text-decoration: none; 
+}
+
+.custom-button-container .nav-link:hover {
+  background-color: #3498db;
+  border-color: #1a73e8; 
+}
+
+/* iconos servicios */
+.number-box {
+  transition: transform 0.3s ease-in-out;
+}
+
+.number-box:hover {
+  transform: scale(1.2);
 }
 
 
