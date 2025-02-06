@@ -278,16 +278,25 @@ section {
 
 @media (max-width: 768px) {
   .section-title h2 {
-    font-size: 18px; /* Reduce tamaño en móviles */
-    line-height: 1.2; /* Ajusta el espacio entre líneas */
-    padding: 0 10px; /* Da margen interno */
+    font-size: 18px; 
+    line-height: 1.2; 
+    padding: 0 10px; 
   }
   .section-title h2::before,
   .section-title h2::after {
-    width: 4px; /* Reduce el tamaño de las líneas en móviles */
+    width: 4px; 
   }
 }
 
+/* Collapse */
+#multiCollapse.show + .d-flex a i::before {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+/* Asegurar que el botón se mueve hacia abajo cuando el contenido está expandido */
+#multiCollapse.show + .d-flex {
+  margin-top: 1rem;
+}
 
 
 
