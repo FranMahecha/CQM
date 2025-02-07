@@ -453,7 +453,7 @@ section {
 
 /* cards */
 .card-custom {
-  width: 800px; /* Ajusta según necesites */
+  width: 800px; 
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -694,4 +694,12 @@ button.btn-dark {
   margin-right: 10px;
 }
 
+/* cards software */
 
+.number-box2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.number-box2:hover {
+  transform: scale(1.05); /* Reducimos el zoom para que no se desborde */
+}
