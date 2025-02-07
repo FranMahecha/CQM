@@ -151,8 +151,8 @@
   z-index: 9999;
   top: 100%;
   left: 0;
-  min-width: auto; /* Elimina el ancho mínimo fijo */
-  width: auto;  /* Ajusta automáticamente el ancho al contenido */
+  min-width: auto; 
+  width: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 5px 0;
   border-radius: 5px; 
@@ -290,10 +290,10 @@ section {
 
 /* Collapse */
 #multiCollapse.show + .d-flex a i::before {
-  content: "\f077"; /* fa-chevron-up */
+  content: "\f077"; 
 }
 
-/* Asegurar que el botón se mueve hacia abajo cuando el contenido está expandido */
+
 #multiCollapse.show + .d-flex {
   margin-top: 1rem;
 }
@@ -453,6 +453,8 @@ section {
 
 /* cards */
 .card-custom {
+  width: 800px; /* Ajusta según necesites */
+  height: 500px;
   background-size: cover;
   background-position: center;
   color: white;
@@ -494,11 +496,11 @@ section {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
 }
 .form-card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -628,5 +630,68 @@ button.btn-dark {
 }
 
 
+  /* Swiper proyecto */
+  .swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 60%; 
+    transform: translateY(-50%);
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
 
-  
+
+.swiper-button-prev {
+    left: 15px; 
+}
+
+.swiper-button-next {
+    right: 15px;
+}
+
+/* Card proyecto */
+.card-proyecto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.card-proyecto:hover {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+.card-proyecto .card-text {
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+.card-proyecto hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+.card-proyecto .list-group-item {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  padding: 8px 0;
+}
+
+.card-proyecto .list-group-item i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+
