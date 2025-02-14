@@ -13,6 +13,11 @@
     <meta name="keywords" content="Consorcio,Qutub,Minar,Electricidad,Servicios">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- START: Styles -->
     <!-- Swiper -->
     <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css">
@@ -27,7 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous">
-        
+
     <!-- END: Styles -->
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
@@ -42,7 +47,7 @@
     <header class="navbar navbar-top navbar-expand-lg navbar-fixed navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img  src="assets/images/CQMlogosinmargen.png" alt="">
+                <img src="assets/images/CQMlogosinmargen.png" alt="">
             </a>
             <a class="navbar-toggle" href="#navbar-mobile-style-2" data-fancybox="" data-base-class="fancybox-navbar"
                 data-keyboard="false" data-auto-focus="false" data-touch="false" data-close-existing="true"
@@ -219,9 +224,14 @@
                                     <!-- <video autoplay loop muted class="video" id="video" style="width: 100%; height: 100%; object-fit: cover;">
                                         <source src="./assets/images/Hermoso paisaje en el mar(video corto).mp4" type="video/mp4">
                                     </video> -->
-                                    <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
+                                    <!-- <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
                                         playsinline="" preload="auto" muted="" loop="" tabindex="-1" autoplay=""
                                         src="https://video.wixstatic.com/video/2eae46_70459f7191b043c48a4b87a3ce771a8a/720p/mp4/file.mp4"
+                                        style="height: 100%; width: 100%; object-fit: cover; object-position: center bottom; opacity: 1;"></video> -->
+
+                                    <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
+                                        playsinline="" preload="auto" muted="" loop="" tabindex="-1" autoplay=""
+                                        src="assets/images/videos/1.mp4"
                                         style="height: 100%; width: 100%; object-fit: cover; object-position: center bottom; opacity: 1;"></video>
                                 </span>
                                 <span class="card-img-overlay container"
@@ -232,15 +242,14 @@
                                                 Construyendo el Futuro con Suministros Seguros y Confiables para
                                                 Grandes Proyectos de Infraestructura en América
                                             </h1> -->
-                                            <!-- <h1 class="text-grey text-center mb-0" style="font-size: 2rem;">
-                                                Construyendo el Futuro con Suministros Seguros y Confiables para
-                                                Grandes Proyectos de Infraestructura en América
-                                            </h1> -->
-                                            <!-- <h1 class="text-black text-start mb-0" style="font-size: 3rem;">
-                                                Construyendo el Futuro con Suministros Seguros y Confiables para
-                                                Grandes Proyectos de Infraestructura en América
-                                            </h1> -->
                                         </div>
+                                        <span class="card-img-overlay container">
+
+                                            <div class="row degrado section-title4">
+                                                <h2>Impulsando la infraestructura con <br> suministros seguros y
+                                                    confiables.</h2>
+                                            </div>
+                                        </span>
                                     </div>
 
                                 </span>
@@ -255,42 +264,92 @@
                                     <li class="nav-item">
                                         <a href="contacto.html" class="nav-link d-block text-center">
                                             Descubre más
-                                            <svg class="icon-arrow icon-arrow-right" width="40" height="20" viewBox="0 0 40 20" fill="none">
-                                                <path d="M30.5 1L35 5.5L30.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M10 5.5H35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <svg class="icon-arrow icon-arrow-right" width="40" height="20"
+                                                viewBox="0 0 40 20" fill="none">
+                                                <path d="M30.5 1L35 5.5L30.5 10" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 5.5H35" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            
-                         </div>
+
+                        </div>
                     </div>
                     <!-- Nosotros -->
                     <div class="swiper-slide"
                         style="height: 670px; transform: translate3d(0px, 30px, -300px) rotateX(0deg) rotateY(0deg); z-index: -2; transition-duration: 0ms;">
                         <div class="card-wrapper h-100">
-                            <a class="card card-fullscreen text-white" href="nosotros.html">
+                            <a class="card card-fullscreen text-white d-flex flex-column h-100" href="nosotros.html">
                                 <span class="card-img">
-                                    <img src="assets/images/Inicio/nosotros2.png" alt="" class="img-fluid">
+                                    <img src="assets/images/Inicio/image (4).jpg" alt="" class="img-fluid">
                                     <span class="background-color"
                                         style="background-color: rgba(14, 14, 14, .2);"></span>
                                 </span>
-                                <!-- <span class="card-img">
-                                    <img src="assets/images/Inicio/nosotros.png" alt="" class="img-fluid">
-                                    <span class="background-color"
-                                        style="background-color: rgba(14, 14, 14, .2);"></span>
-                                </span> -->
                                 <span class="card-img-overlay container">
-                                    <!-- <div class="row degrado ">
-                                        <h2 class="card-title h3 text-start mb-3" id="texto">
-                                            <span class="card-title-decoration"
-                                                style="color: rgb(211, 183, 42); border-style: solid; z-index: 100;"></span>
-                                            Nosotros
-                                        </h2>
-                                    </div> -->
-                                    <div class="row degrado section-title2">
+                                    <div class="row degrado section-title2 text-center">
                                         <h2>Nosotros</h2>
+                                    </div>
+                                </span>
+                                <span
+                                    class="card-img-overlay container d-flex flex-column align-items-end justify-content-center h-100">
+                                    <div class="row w-50 ms-auto justify-content-end">
+                                        <div class="stat-item">
+                                            <img src="assets/images/iconos/3.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="200"></span>
+                                                <div class="stat-text">Prototipos de torres</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-item">
+                                            <img src="assets/images/iconos/10.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="12000"></span>
+                                                <div class="stat-text">Contenedores de material transportado</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-item ">
+                                            <img src="assets/images/iconos/12.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="15"></span>
+                                                <div class="stat-text">Paises</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-item">
+                                            <img src="assets/images/iconos/11.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="3000"></span>
+                                                <div class="stat-text">Revisión y aprobación de dibujos estructurales
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-item">
+                                            <img src="assets/images/iconos/13.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="12"></span>
+                                                <div class="stat-text">Fabricantes</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-item">
+                                            <img src="assets/images/iconos/14.png" alt="Icono" class="stat-icon">
+                                            <div>
+                                                <span class="counter text-white fs-2 fw-bold stat-number"
+                                                    data-target="300000"></span>
+                                                <div class="stat-text">Toneladas de material</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </span>
                             </a>
@@ -450,6 +509,8 @@
     <script src="assets/js/themebau.min.js"></script>
     <!-- Idioma -->
     <script src="assets/js/idioma.js"></script>
+    <!-- Contador -->
+    <script src="assets/js/contador.js"></script>
     <!-- END: Scripts -->
 
 
