@@ -1070,7 +1070,7 @@ button.btn-dark {
 #unique-title::after {
   content: '';
   display: block;
-  width: 60px;
+  width: 280px;
   height: 3px;
   background: #007bff;
   margin: 10px auto 0;
