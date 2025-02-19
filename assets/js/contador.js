@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const updateCounter = () => {
             count += increment;
             if (count < target) {
-                counter.innerText = Math.floor(count);
+                counter.innerText = Math.floor(count).toLocaleString("es-ES");;
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.innerText = target; 
+                counter.innerText = target.toLocaleString("es-ES");; 
             }
         };
 

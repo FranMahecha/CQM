@@ -75,7 +75,10 @@
 /* ----------------------------------------------------------------------- */
 /* GENERAL */
 /* ----------------------------------------------------------------------- */
-
+body {
+  font-family:  sans-serif;
+  /* font-size: 22px; */
+}
 .navbar-nav {
   display: flex;
   justify-content: flex-start; 
@@ -295,6 +298,7 @@ section {
 }
 
 .section-title h2 {
+  font-family:  sans-serif;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -417,6 +421,19 @@ section {
   background-color: #3498db;
   border-color: #1a73e8; 
 }
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  /* rgba(0, 0, 0, 0.6)  */
+  border-top: 20px solid rgba(255, 255, 255, 0.5); 
+  position: absolute;
+  left: 50%;
+  bottom: 80px; 
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite; 
+}
 
 /* titulo video */
 
@@ -441,8 +458,9 @@ section {
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Orbitron', sans-serif; */
-  font-family: 'Lora', serif;
   /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Lora', serif; */
+  font-family:  sans-serif;
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -473,18 +491,19 @@ section {
 }
 
 .stat-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-right: 10px;
 }
 
 .stat-number {
-  font-size: 34px;
+  font-family:sans-serif ;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .stat-text {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
 }
 
@@ -692,6 +711,7 @@ section {
 }
 
 .services .title {
+  font-family:  sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -702,7 +722,8 @@ section {
 }
 
 .services .description {
-  font-size: 15px;
+  font-family:  sans-serif;
+  /* font-size: 18px; */
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -971,6 +992,27 @@ section {
   color: #222222;
   word-wrap: break-word;
   white-space: nowrap; 
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+  border-radius: 10px;
+}
+.content-wrap2 {
+  text-align: center;
+  padding: 20px;
+}
+.popup-img {
+  width: 200px;  
+  max-width: 100%;  
+  height: auto;  
+  border-radius: 10px;
+  object-fit: contain;  
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 /* ----------------------------------------------------------------------- */
 /* CONTACTO */

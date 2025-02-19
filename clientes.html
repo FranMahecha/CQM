@@ -22,6 +22,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
     <!-- END: Styles -->
     <!-- jQuery -->
@@ -217,6 +218,7 @@
             </div>
         </div>
         <div class="py-60">
+            
             <div class="container">
                 <div class="row justify-content-center mt-16">
                     <div class="col-12 col-xl-10 mt-8">
@@ -228,156 +230,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper pt-30 mt-60" data-swiper-slides="4" data-swiper-breakpoints="520:1, 828:2, 1024:3"
-                    data-swiper-grabcursor="true" data-swiper-gap="30">
-                    <div class="swiper-container" id="swiper1">
-                        <div class="swiper-wrapper">
-                            <!-- ISA -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/1.png" class="img-fluid" alt="isa">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">ISA</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- INTERCHILE -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/2.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">INTERCHILE</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- REP -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/3.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">REP</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- CONSORCIO TRANSMANTARO -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/fabricantes/404.jpg" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">CONSORCIO TRANSMANTARO</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- OCHOA -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/5.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">OCHOA</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- CONCRET MIX -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/6.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">CONCRET MIX</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- SKIPPER LIMITED -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/7.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">SKIPPER LIMITED</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- ELECNOR -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/8.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">ELECNOR</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- MORELCO -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/9.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">MORELCO</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- TRASMISORA COLOMBIANA DE ENERGIA S.A.S -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/10.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">TRASMISORA COLOMBIANA DE ENERGIA S.A.S</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- EDEMSA -->
-                            <div class="swiper-slide">
-                                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="member-img">
-                                        <img src="assets/images/clientes/11.png" class="img-fluid" alt="">
-
-                                    </div>
-                                    <div class="member-info mt-5">
-                                        <h4 style="text-align: center;">EDEMSA</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-scrollbar"></div>
-                </div>
+            
+                <div id="map"></div>
                 <div class="row justify-content-center mt-160">
                     <div class="col-12 col-xl-10 mt-8">
                         <div
@@ -733,6 +587,9 @@
     <script src="assets/js/themebau.min.js"></script>
     <!-- idioma -->
     <script src="assets/js/idioma.js"></script>
+    <!-- Mapa -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/mapa.js"></script>
     <!-- END: Scripts -->
 </body>
 
