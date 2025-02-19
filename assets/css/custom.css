@@ -662,7 +662,9 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #3498db;
+  
+  /* colores card:#0979b0, #7cdaf9, #0cb7f2, rgba(99,146,225,255), rgba(60,97,173,255) */
+  background: rgba(60,97,173,255);
   right: 0;
   top: 0;
   width: 100%;
