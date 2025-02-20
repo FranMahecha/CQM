@@ -75,6 +75,11 @@
 /* ----------------------------------------------------------------------- */
 /* GENERAL */
 /* ----------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
 body {
   font-family:  sans-serif;
   /* font-size: 22px; */
