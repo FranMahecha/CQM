@@ -28,6 +28,10 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
@@ -45,7 +49,7 @@
 
 
     <header class="navbar navbar-top navbar-expand-lg navbar-fixed navbar-dark">
-        <div class="container">
+        <div class="container d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/CQMlogosinmargen.png" alt="">
             </a>
@@ -57,6 +61,9 @@
                 <span></span>
             </a>
             <div id="header-container"></div>
+            <a class="navbar-brand2" href="index.html">
+                <img src="assets/images/SELLO_SISTEMA_CERTIFICADO_9001_SM_RGB.png" alt="">
+            </a>
         </div>
     </header>
     <!-- style 2 -->
@@ -227,22 +234,22 @@
                         <div class="card-wrapper h-100">
                             <a class="card card-fullscreen text-white">
                                 <!-- <span -->
-                                    <!-- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;"> -->
-                                    <!-- <video autoplay loop muted class="video" id="video" style="width: 100%; height: 100%; object-fit: cover;">
+                                <!-- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;"> -->
+                                <!-- <video autoplay loop muted class="video" id="video" style="width: 100%; height: 100%; object-fit: cover;">
                                         <source src="./assets/images/Hermoso paisaje en el mar(video corto).mp4" type="video/mp4">
                                     </video> -->
-                                    <!-- <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
+                                <!-- <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
                                         playsinline="" preload="auto" muted="" loop="" tabindex="-1" autoplay=""
                                         src="https://video.wixstatic.com/video/2eae46_70459f7191b043c48a4b87a3ce771a8a/720p/mp4/file.mp4"
                                         style="height: 100%; width: 100%; object-fit: cover; object-position: center bottom; opacity: 1;"></video> -->
 
-                                        <div class="video-container">
-                                            <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous"
-                                                playsinline preload="auto" muted loop tabindex="-1" autoplay
-                                                src="assets/images/videos/original.mp4">
-                                            </video>
-                                            <div class="video-overlay"></div>
-                                        </div>
+                                <div class="video-container">
+                                    <video id="comp-lutiplyu_video" class="K8MSra" crossorigin="anonymous" playsinline
+                                        preload="auto" muted loop tabindex="-1" autoplay
+                                        src="assets/images/videos/original.mp4">
+                                    </video>
+                                    <div class="video-overlay"></div>
+                                </div>
                                 <!-- </span> -->
                                 <span class="card-img-overlay container"
                                     style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: justify;">
@@ -259,6 +266,7 @@
                                                 <h2>Impulsando la infraestructura con <br> suministros seguros y
                                                     confiables</h2>
                                             </div>
+                                            <!-- <div class="arrow-down"></div> -->
                                         </span>
                                     </div>
 
@@ -269,7 +277,7 @@
                                             class="img-fluid imagenp"></h2>
                                 </span> -->
                             </a>
-                            <div class="custom-button-container">
+                            <!-- <div class="custom-button-container">
                                 <ul class="card-social nav nav-gap-md align-items-center flex-column text-white">
                                     <li class="nav-item">
                                         <a href="contacto.html" class="nav-link d-block text-center">
@@ -284,16 +292,17 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="arrow-down"></div>
                             <!-- <a href="#next" class="arrow-down"></a> -->
                         </div>
                     </div>
                     <!-- Nosotros -->
-                    <div  class="swiper-slide"
+                    <div class="swiper-slide"
                         style="height: 670px; transform: translate3d(0px, 30px, -300px) rotateX(0deg) rotateY(0deg); z-index: -2; transition-duration: 0ms;">
                         <div class="card-wrapper h-100">
-                            <a class="card card-fullscreen text-white d-flex flex-column h-100" href="nosotros.html" id="next">
+                            <a class="card card-fullscreen text-white d-flex flex-column h-100" href="nosotros.html"
+                                id="next">
                                 <span class="card-img img-inicio">
                                     <img src="assets/images/Inicio/torres5.jpeg" alt="" class="img-fluid ">
                                     <span class="background-color"
@@ -305,62 +314,67 @@
                                     </div>
                                 </span>
                                 <span
-                                    class="card-img-overlay container d-flex flex-column align-items-end justify-content-center h-100 movil" style="margin-top: 50px; transform: translateX(40px); ">
-                                    <div class="row w-50 ms-auto justify-content-end ">
-                                        <div class="stat-item">
-                                            <img src="assets/images/iconos/3.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="354"></span>
-                                                <div class="stat-text">Prototipos de torres</div>
-                                            </div>
-                                        </div>
+                                    class="card-img-overlay container d-flex flex-column align-items-end justify-content-center h-100 movil"
+                                    style="margin-top: 50px; transform: translateX(40px); ">
+                                    <div class="row w-70 ms-auto justify-content-end ">
 
-                                        <div class="stat-item">
-                                            <img src="assets/images/iconos/10.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="17936"></span>
-                                                <div class="stat-text">Contenedores de material transportado</div>
+                                        <div class="stats-container">
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/12.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="16">16</span>
+                                                    <div class="stat-text">Países</div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="stat-item ">
-                                            <img src="assets/images/iconos/12.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="16"></span>
-                                                <div class="stat-text">Paises</div>
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/16.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="19">19</span>
+                                                    <div class="stat-text">Fabricantes</div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="stat-item">
-                                            <img src="assets/images/iconos/11.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="4100"></span>
-                                                <div class="stat-text">Revisión y aprobación de dibujos estructurales
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/3.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="354">354</span>
+                                                    <div class="stat-text">Prototipos de torres <br>. </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/11.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="4100">4100</span>
+                                                    <div class="stat-text">Revisión y aprobación de dibujo
+                                                        estructural y BOM</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/10.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="17936">17936</span>
+                                                    <div class="stat-text">Contenedores de material transportado</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="stat-item">
+                                                <img src="assets/images/iconos/17.png" alt="Icono" class="stat-icon">
+                                                <div class="stat-content">
+                                                    <span class="counter text-white fs-2 fw-bold stat-number"
+                                                        data-target="394588">394588</span>
+                                                    <div class="stat-text">Toneladas de material controladas</div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="stat-item">
-                                            <img src="assets/images/iconos/16.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="19"></span>
-                                                <div class="stat-text">Fabricantes</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="stat-item">
-                                            <img src="assets/images/iconos/17.png" alt="Icono" class="stat-icon">
-                                            <div>
-                                                <span class="counter text-white fs-2 fw-bold stat-number"
-                                                    data-target="394588"></span>
-                                                <div class="stat-text">Toneladas de material</div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </span>
                             </a>
@@ -414,61 +428,165 @@
                     <!-- Proyectos -->
                     <div class="swiper-slide"
                         style="height: 670px; transform: translate3d(0px, 90px, -900px) rotateX(0deg) rotateY(0deg); z-index: -8; transition-duration: 0ms;">
-                        <div class="card-wrapper h-100">
+                        <div class="card-wrapper h-100 position-relative">
                             <a class="card card-fullscreen text-white" href="proyectos.html">
-                                <!-- <span class="card-img">
-                                    <img src="assets/images/Inicio/proyecto.jpg" alt="">
-                                    <span class="background-color"
-                                        style="background-color: rgba(14, 14, 14, .2);"></span>
-                                </span> -->
                                 <span class="card-img">
-                                    <img src="assets/images/Inicio/proyectoo.jpg" alt="">
+                                    <img src="assets/images/Inicio/mapa.png" alt="">
+                                    <!-- <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"><source src="https://static.genially.com/resources/loader-default-rebranding.mp4" type="video/mp4" />Your browser does not support the video tag.</video><div id="67c1b95e987e743fe7a2adf3" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genially.com/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script> -->
+                                    <!-- <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"><source src="https://static.genially.com/resources/loader-default-rebranding.mp4" type="video/mp4" />Your browser does not support the video tag.</video><div id="67c1b95e987e743fe7a2adf3" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genially.com/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script> -->
                                     <span class="background-color"
                                         style="background-color: rgba(14, 14, 14, .2);"></span>
                                 </span>
                                 <span class="card-img-overlay container">
-                                    <!-- <div class="row degrado">
-                                        <h2 class="card-title h3" id="texto"><span class=" card-title-decoration"
-                                                style="color: rgb(211, 183, 42);border-style: solid;z-index: 100;">
-                                            </span>Proyectos
-                                        </h2>
-                                    </div> -->
-                                    <div class="row degrado section-title2">
-                                        <h2>Proyectos</h2>
+                                    <div class="section-title5">
+                                        <h2 class="left-title">Proyectos</h2>
+                                        <h2 class="right-title">Clientes <br> y Fabricantes</h2>
                                     </div>
-
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <!-- Clientes -->
+                    <!-- Formulario rgba(255, 255, 255, 0.5)-->
                     <div class="swiper-slide"
-                        style="height: 670px; transform: translate3d(0px, 90px, -900px) rotateX(0deg) rotateY(0deg); z-index: -8; transition-duration: 0ms;">
+                        style="height: 670px; transform: translate3d(0px, 60px, -600px) rotateX(0deg) rotateY(0deg); z-index: -5; transition-duration: 0ms;">
                         <div class="card-wrapper h-100">
-                            <a class="card card-fullscreen text-white" href="clientes.html">
+                            <div class="card card-fullscreen text-white" href="">
                                 <span class="card-img">
                                     <img src="assets/images/Inicio/clientes3.jpg" alt="">
                                     <span class="background-color"
-                                        style="background-color: rgba(14, 14, 14, .2);"></span>
+                                        style="background-color: aliceblue"></span>
                                 </span>
-                                <!-- <span class="card-img">
-                                    <img src="assets/images/Inicio/cliente2.png" alt="">
-                                    <span class="background-color"
-                                        style="background-color: rgba(14, 14, 14, .2);"></span>
-                                </span> -->
                                 <span class="card-img-overlay container">
-                                    <!-- <div class="row degrado">
-                                        <h2 class="card-title h3" id="texto"><span class=" card-title-decoration"
-                                                style="color: rgb(211, 183, 42);border-style: solid;z-index: 100;">
-                                            </span>Clientes <br> y Fabricantes
-                                        </h2>
-                                    </div> -->
-                                    <div class="row degrado section-title2">
-                                        <h2>Clientes <br> y Fabricantes</h2>
-                                    </div>
+                                    <div class="row">
 
+                                        <div class="col-12 col-lg-4">
+                                            <div class="form-card2 ">
+    
+                                                <div class="mb-60 " data-show-delay="100"
+                                                    data-show-distance="20" data-show-duration="500"
+                                                    data-show-origin="left">
+                                                    <div class="section-title col-12 text-sm-start">
+                                                        <h2 class="display-4 mt-3 mb-3">Información:</h2>
+                                                    </div>
+                                                    <ul class="list-group borderless font-size-17">
+                                                        <li class="list-group-item">
+                                                            <i class="bi bi-envelope icon-hover flex-shrink-0"></i> <a
+                                                                href="mailto:info@consorcioqutubminar.com?subject=Test%20Address%20Email"
+                                                                style="font-size: 1.1rem;color: black; margin-left: 5px;">info@consorcioqutubminar.com</a>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div>
+                                                                <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                                                <a href="callto:+573124868490"
+                                                                    style="font-size: 1.1rem; color: black">+57 312 486 8490</a>
+                                                            </div>
+                                                            <div>
+                                                                <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                                                <a href="callto:+573228469582"
+                                                                    style="font-size: 1.1rem; color: black">+57 322 846 9582</a>
+                                                            </div>
+                                                        </li>
+    
+                                                    </ul>
+                                                </div>
+    
+    
+                                                <div class="mb-50 mt-n15 " data-show-delay="200"
+                                                    data-show-distance="20" data-show-duration="500"
+                                                    data-show-origin="left">
+                                                    <!-- <p class="lead mb-17 font-weight-medium">Dirección:</p> -->
+                                                    <div class="section-title col-12  text-sm-start">
+                                                        <h2 class="display-4 mt-3 mb-3">Dirección:</h2>
+                                                    </div>
+                                                    <ul class="list-group borderless font-size-17">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem; color: #000; line-height: 1.2;">
+                                                                <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                                                Balcones de Buena Vista CS9, Cajicá, Colombia.
+                                                            </li>
+                                                        </ul> 
+                                                        
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem; color: #000; line-height: 1.2;">
+                                                                <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                                                USES. 15231 SW 26 TERRACE, MIAMI, FL. US 33185
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="for1 col-12 col-lg-8">
+    
+                                            <div class="form-card2 ">
+                                                <!-- <h4 style="text-align: center;" data-i18n="title.form">Envíanos un correo</h4> -->
+                                                <div class="section-title col-12  text-sm-start">
+                                                    <h2 class="display-4 mt-3 mb-3">Envíanos un correo</h2>
+                                                </div>
+                                                <!-- Test:https://formspree.io/f/myzkjeda -->
+                                                <form action="https://formspree.io/f/mzzzzgzo" method="POST"
+                                                    id="contact-form">
+                                                    <div class="row gh-1 gv-2">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group mb-0">
+                                                                <input type="text" name="name"
+                                                                    class="form-control form-control-rounded" id="nombre"
+                                                                    data-i18n="input.name" placeholder="Nombre/Compañia"
+                                                                    data-rule="minlen:4"
+                                                                    data-msg="Please enter at least 4 chars" required />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group mb-0">
+                                                                <input type="tel" class="form-control form-control-rounded"
+                                                                    name="phone" id="telefono" data-i18n="input.phone"
+                                                                    placeholder="Telefono" data-rule="minlen:10"
+                                                                    data-msg="Please enter a valid phone number (at least 10 digits)"
+                                                                    pattern="[0-9]{10,}" />
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-lg-6">
+                                                        <div class="form-group mb-0">
+                                                            <input type="text" class="form-control form-control-rounded" name="cedula_nit" id="nit" data-i18n="input.nit" placeholder="ID/NIT" data-rule="minlen:4" data-msg="Please enter at least 4 characters for Cedula/NIT" pattern="[0-9]{4,}" />
+                                                        </div>
+                                                    </div> -->
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group mb-0">
+                                                                <input type="text" class="form-control form-control-rounded"
+                                                                    name="subject" id="sujeto" data-i18n="input.subject"
+                                                                    placeholder="Asunto" data-rule="minlen:4"
+                                                                    data-msg="Please enter at least 8 chars of subject" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group ">
+                                                                <input type="email"
+                                                                    class="form-control form-control-rounded" name="email"
+                                                                    id="correo" data-i18n="input.email" placeholder="Correo"
+                                                                    data-rule="email" data-msg="Please enter a valid email"
+                                                                    required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group mt-25">
+                                                            <textarea class="form-control form-control-rounded"
+                                                                name="message" rows="5" data-rule="required"
+                                                                data-msg="Please write something for us"
+                                                                data-i18n="input.message" placeholder="Mensaje" id="mensaje"
+                                                                required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button class="btn btn-dark2 btn-with-ball mt-20" type="submit"
+                                                            id="enviar" data-i18n="button.send">Enviar mensaje</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </span>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Footer -->
@@ -523,7 +641,7 @@
     <!-- Contador -->
     <script src="assets/js/contador.js"></script>
     <!-- Scroll -->
-     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/scroll.js"></script>
     <!-- END: Scripts -->
     <script>
 
