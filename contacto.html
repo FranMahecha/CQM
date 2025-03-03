@@ -111,7 +111,7 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="nav-item navbar-collapse">
+                            <!-- <li class="nav-item navbar-collapse">
                                 <a href="clientes.html" class="nav-link ">
                                     <span class="nav-link-name">Clientes y Fabricantes</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
@@ -119,7 +119,7 @@
                                             stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item navbar-collapse">
                                 <a href="contacto.html" class="nav-link ">
                                     <span class="nav-link-name">Contacto</span>
@@ -210,9 +210,9 @@
             <div class="container">
                 <div class="row mb-n8">
                     <div class="section-title col-12 text-center " >
-                        <h2 >Consorcio Qutub Minar</h2>
+                        <h2 data-i18n="contacto.titulo">Consorcio Qutub Minar</h2>
                     </div>
-                    <p style="text-align: justify; font-size: 1.1rem; color: black">Permítanos ayudarlo a resolver sus desafíos de inspección y cadena de suministro. 
+                    <p style="text-align: justify; font-size: 1.1rem; color: black" data-i18n="contacto.texto">Permítanos ayudarlo a resolver sus desafíos de inspección y cadena de suministro. 
                         Para cualquier consulta o pregunta, por favor llame o complete el siguiente formulario.</p>
                 </div>
                 <div class="row gh-1 gv-2 pb-10">
@@ -221,7 +221,7 @@
 
                             <div class="mb-60 show-on-scroll" data-show-delay="100" data-show-distance="20" data-show-duration="500" data-show-origin="left">
                                 <div class="section-title col-12 text-sm-start">
-                                    <h2 class="display-4 mt-3 mb-3">Información:</h2>
+                                    <h2 class="display-4 mt-3 mb-3" data-i18n="contacto.informacion">Información:</h2>
                                 </div>
                                 <ul class="list-group borderless font-size-17">
                                     <li class="list-group-item">
@@ -245,7 +245,7 @@
                             <div class="mb-60 mt-n15 show-on-scroll" data-show-delay="200" data-show-distance="20" data-show-duration="500" data-show-origin="left">
                                 <!-- <p class="lead mb-17 font-weight-medium">Dirección:</p> -->
                                 <div class="section-title col-12  text-sm-start">
-                                    <h2 class="display-4 mt-3 mb-3" >Dirección:</h2>
+                                    <h2 class="display-4 mt-3 mb-3"  data-i18n="contacto.direccion">Dirección:</h2>
                                 </div>
                                 <ul class="list-group borderless font-size-17">
                                     <ul class="list-group">
@@ -270,19 +270,19 @@
                         <div class="form-card">
                             <!-- <h4 style="text-align: center;" data-i18n="title.form">Envíanos un correo</h4> -->
                             <div class="section-title col-12  text-sm-start">
-                                <h2 class="display-4 mt-3 mb-3">Envíanos un correo</h2>
+                                <h2 class="display-4 mt-3 mb-3" data-i18n="contacto.form.titulo">Envíanos un correo</h2>
                             </div>
                             <!-- Test:https://formspree.io/f/myzkjeda -->
                             <form action="https://formspree.io/f/mzzzzgzo" method="POST" id="contact-form">
                                 <div class="row gh-1 gv-2">
                                     <div class="col-lg-6">
                                         <div class="form-group mb-0">
-                                            <input type="text" name="name" class="form-control form-control-rounded" id="nombre" data-i18n="input.name" placeholder="Nombre/Compañia" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                                            <input data-i18n="contacto.form.nombre" type="text" name="name" class="form-control form-control-rounded" id="nombre" placeholder="Nombre/Compañia" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group mb-0">
-                                            <input type="tel" class="form-control form-control-rounded" name="phone" id="telefono" data-i18n="input.phone" placeholder="Telefono" data-rule="minlen:10" data-msg="Please enter a valid phone number (at least 10 digits)" pattern="[0-9]{10,}" />
+                                            <input data-i18n="contacto.form.telefono" type="tel" class="form-control form-control-rounded" name="phone" id="telefono"  placeholder="Telefono" data-rule="minlen:10" data-msg="Please enter a valid phone number (at least 10 digits)" pattern="[0-9]{10,}" />
                                         </div>
                                     </div>
                                     <!-- <div class="col-lg-6">
@@ -292,22 +292,22 @@
                                     </div> -->
                                     <div class="col-lg-6">
                                         <div class="form-group mb-0">
-                                            <input type="text" class="form-control form-control-rounded" name="subject" id="sujeto" data-i18n="input.subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                            <input data-i18n="contacto.form.asunto" type="text" class="form-control form-control-rounded" name="subject" id="sujeto" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group ">
-                                            <input type="email" class="form-control form-control-rounded" name="email" id="correo" data-i18n="input.email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" required />
+                                            <input data-i18n="contacto.form.correo" type="email" class="form-control form-control-rounded" name="email" id="correo"  placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" required />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group mt-25">
-                                        <textarea class="form-control form-control-rounded" name="message" rows="5" data-rule="required" data-msg="Please write something for us" data-i18n="input.message" placeholder="Mensaje" id="mensaje" required></textarea>
+                                        <textarea data-i18n="contacto.form.mensaje" class="form-control form-control-rounded" name="message" rows="5" data-rule="required" data-msg="Please write something for us"  placeholder="Mensaje" id="mensaje" required></textarea>
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button class="btn btn-dark btn-with-ball mt-20" type="submit" id="enviar" data-i18n="button.send">Enviar mensaje</button>
+                                    <button class="btn btn-dark btn-with-ball mt-20" type="submit" id="enviar" data-i18n="button.send"><span data-i18n="contacto.form.boton.enviar">Enviar mensaje</span></button>
                                 </div>
                             </form>
                         </div>

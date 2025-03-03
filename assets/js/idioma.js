@@ -57,7 +57,7 @@ const translatePage = (translations) => {
         const key = element.getAttribute('data-i18n');
         const translation = translations[key] || translations['en']?.[key];
         if (translation) {
-            element.textContent = translation;
+            element.innerHTML  = translation;
         }
     });
 };

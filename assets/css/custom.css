@@ -54,7 +54,7 @@
     max-height: 80px;
   }
   
-  @media (max-width: 1050px) {
+  /* @media (max-width: 1050px) {
     #header {
       position: fixed;
       top: 0;
@@ -78,7 +78,7 @@
     header.navbar .navbar-brand2 img {
       display: none ;
     }
-  }
+  } */
 /* ----------------------------------------------------------------------- */
 /* GENERAL */
 /* ----------------------------------------------------------------------- */
@@ -325,8 +325,44 @@ section {
 .section-title p {
   margin: 15px 0 0 0;
 }
+.section-titleF {
+  text-align: center;
+  padding-bottom: 30px;
+}
 
-@media (max-width: 768px) {
+.section-titleF h2 {
+  font-family:  sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #222222;
+  white-space: nowrap;
+}
+
+.section-titleF h2::before,
+.section-titleF h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #3498db;
+  display: inline-block;
+}
+
+.section-titleF h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.section-titleF h2::after {
+  margin: 0 0 10px 15px;
+  margin-left: 15px;
+}
+
+.section-titleF p {
+  margin: 15px 0 0 0;
+}
+
+/* @media (max-width: 1050px) {
   .navbar-toggle {
     position: fixed; 
     top: 30px; 
@@ -349,8 +385,43 @@ section {
   .section-title h2::after {
     width: 4px; 
   }
+} */
+@media (max-width: 1050px) {
+  #header {
+    padding: 10px 0;
+  }
+  #header .logo h1 {
+    font-size: 28px;
+  }
+  .text-white,
+  .nav-link-name {
+    font-size: 1.1rem;
+  }
+  header.navbar .navbar-brand2 img {
+    display: none;
+  }
+  .navbar-toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .card-custom {
+    min-height: 200px;
+  }
+  .card-body {
+    padding: 15px;
+    text-align: justify;
+  }
+  .section-title h2 {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+  .section-title h2::before,
+  .section-title h2::after {
+    width: 4px;
+  }
 }
-
 /* ----------------------------------------------------------------------- */
 /* INICIO */
 /* ----------------------------------------------------------------------- */
@@ -665,10 +736,36 @@ button.btn-dark2 {
 .for1 {
   position: relative;
 }
+/* .photo2 {
+  display: none !important;
+} */
+
+@media (max-width: 429px) {
+  .section-title2 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: white; 
+    white-space: nowrap;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 100px;
+  }
+  .section-title2 h2::before {
+    content: "";
+    width: 20px; 
+    height: 4px; 
+    background: rgb(211, 183, 42);
+    display: inline-block;
+  }
+  
+
+ }
 
 
-
-@media (max-width: 768px) { 
+@media (max-width: 1023px) { 
   .custom-button-container{
     display: none ;
   }
@@ -693,8 +790,8 @@ button.btn-dark2 {
     /* rgba(0, 0, 0, 0.6) rgba(255, 255, 255, 0.5)  */
     border-top: 20px solid white; 
     position: absolute;
-    left: 47%;
-    bottom: 300px; 
+    left: 50%;
+    bottom: 150px; 
     transform: translateX(-50%);
     animation: bounce 1.5s infinite;
   }
@@ -727,7 +824,7 @@ button.btn-dark2 {
     display: flex;
     align-items: center; 
     gap: 10px; 
-    margin-top: -500px;
+    margin-top: -350px;
   }
   .section-title2 h2::before {
     content: "";
@@ -746,6 +843,7 @@ button.btn-dark2 {
     width: 100%;
     padding: 10px;
     margin-left: -330px;
+    margin-top: 80px;
   }
 
   
@@ -775,11 +873,11 @@ button.btn-dark2 {
   .stat-text {
     font-size: 14px;
     color: white;
-    white-space: nowrap; /* Evita saltos de línea */
-    overflow: hidden; /* Oculta el texto que sobrepasa el ancho */
-    text-overflow: ellipsis; /* Agrega los puntos suspensivos (...) */
-    max-width: 120px; /* Define un ancho máximo para que se aplique el efecto */
-    display: block; /* Asegura que funcione correctamente */
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 120px;
+    display: block; 
     text-align: center;
   }
 
@@ -794,10 +892,62 @@ button.btn-dark2 {
     transform: none !important;
     width: 100%;
   }
+  /* .photo1 {
+    display: none !important;
+  } */
+  .section-title5 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: white; 
+    white-space: nowrap;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+  }
+  .left-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    align-self: flex-start;
+    margin-bottom: auto; 
+  }
+  
+  .right-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    align-self: flex-end; 
+    margin-top: auto;
+    right: 20px;
+    bottom: -160px;
+  }
+  
+  
+  .section-title5 h2::before {
+    content: "";
+    width: 20px; 
+    height: 4px; 
+    background: rgb(211, 183, 42);
+    display: inline-block;
+  }
 
+  .section-titleF h2 {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+  .section-titleF h2::before,
+  .section-titleF h2::after {
+    width: 4px;
+  }
   .t1 {
     display: none;
   }
+
   .form-card2 {
     margin-left: 0;  
     margin-right: 0;
@@ -807,7 +957,7 @@ button.btn-dark2 {
   }
 
   button.btn-dark2 {
-    margin-left: 80px;      
+    margin-left: 150px;      
     text-align: center;
     display: block;
     height: 20px; 
@@ -821,7 +971,34 @@ button.btn-dark2 {
   }
 
 }
+@media (max-width: 517px) { 
 
+  button.btn-dark2 {
+    margin-left: 100px;      
+    text-align: center;
+    display: block;
+    height: 20px; 
+    padding: 2px 10px;
+    font-size: 12px;
+    margin-bottom: -25px;
+}
+}
+
+@media (max-width: 1020px) { 
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    /* rgba(0, 0, 0, 0.6) rgba(255, 255, 255, 0.5)  */
+    border-top: 20px solid white; 
+    position: absolute;
+    left: 48%;
+    bottom: 150px; 
+    transform: translateX(-50%);
+    animation: bounce 1.5s infinite;
+  }
+}
 
 /* ----------------------------------------------------------------------- */
 /* NOSOTROS */
@@ -1451,7 +1628,7 @@ button.btn-dark {
 
 @media (max-width: 480px) {
   #unique-title {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       letter-spacing: 1px;
   }
 
