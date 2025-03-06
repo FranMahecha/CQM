@@ -922,7 +922,7 @@ button.btn-dark2 {
     color: white;
     align-self: flex-end; 
     margin-top: auto;
-    right: 20px;
+    right: 30px;
     bottom: -160px;
   }
   
@@ -974,7 +974,7 @@ button.btn-dark2 {
 @media (max-width: 517px) { 
 
   button.btn-dark2 {
-    margin-left: 100px;      
+    margin-left: 70px;      
     text-align: center;
     display: block;
     height: 20px; 

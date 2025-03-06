@@ -74,7 +74,7 @@
                         <ul class="nav navbar-nav navbar-nav-collapse">
                             <li class="nav-item navbar-collapse">
                                 <a href="index.html" class="nav-link ">
-                                    <span class="nav-link-name">Inicio</span>
+                                    <span class="nav-link-name" data-i18n="header.inicio">Inicio</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -83,7 +83,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="nosotros.html" class="nav-link ">
-                                    <span class="nav-link-name">Nosotros</span>
+                                    <span class="nav-link-name" data-i18n="header.nosotros">Nosotros</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -92,7 +92,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="sercicios.html" class="nav-link ">
-                                    <span class="nav-link-name">Servicios</span>
+                                    <span class="nav-link-name" data-i18n="header.servicios">Servicios</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -101,7 +101,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="proyectos.html" class="nav-link ">
-                                    <span class="nav-link-name">Proyectos</span>
+                                    <span class="nav-link-name" data-i18n="header.proyecto">Proyectos</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -119,7 +119,7 @@
                             </li> -->
                             <li class="nav-item navbar-collapse">
                                 <a href="contacto.html" class="nav-link ">
-                                    <span class="nav-link-name">Contacto</span>
+                                    <span class="nav-link-name" data-i18n="header.contacto">Contacto</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -129,7 +129,7 @@
                             <li class="nav-item navbar-dropdown">
                                 <a href="#" class="nav-link">
                                     <!-- <img src="assets/images/globo.png" alt="" style="width: 18px;"> -->
-                                    <span class="nav-link-name">Idioma</span>
+                                    <span class="nav-link-name" data-i18n="header.idioma">Idioma</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" class="language-switch" data-lang="es">
@@ -150,20 +150,37 @@
                 <div class="col-12 col-md-3 col-lg-4 col-xl-3 text-white">
                     <div class="navbar-footer">
                         <div class="mb-60">
-                            <p class="lead mb-17 font-weight-medium">Información de contacto:</p>
+                            <p class="lead mb-17 font-weight-medium" data-i18n="contacto.informacion">Información de contacto:</p>
                             <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">Email: <a href="mailto:info@consorcioqutubminar.com"
-                                        style="color: white">info@consorcioqutubminar.com</a>
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope icon-hover flex-shrink-0"></i> 
+                                    <a href="mailto:info@consorcioqutubminar.com?subject=Test%20Address%20Email" style="font-size: 1.1rem; color: white;">info@consorcioqutubminar.com</a>
                                 </li>
-                                <li class="list-group-item">Telefono: <a href="callto:+573044003622"
-                                        style="color: white">+57 304 400 3622</a>
-                                </li>
+                                <div>
+                                    <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                    <a href="callto:+573124868490" style="font-size: 1.1rem; color: white;">+57 312 486 8490</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                    <a href="callto:+573228469582" style="font-size: 1.1rem; color: white;">+57 322 846 9582</a>
+                                </div>
+                                
                             </ul>
                         </div>
                         <div class="mb-60">
-                            <p class="lead mb-17 font-weight-medium">Dirección:</p>
-                            <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">Cajica</li>
+                            <p class="lead mb-17 font-weight-medium" data-i18n="contacto.direccion">Dirección:</p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem;  color: white; line-height: 1.2;">
+                                    <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                    Balcones de Buena Vista CS9, Cajicá, Colombia.
+                                </li>
+                            </ul> 
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem;  color: white; line-height: 1.2;">
+                                    <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                    USES. 15231 SW 26 TERRACE, MIAMI, FL. US 33185
+                                </li>
                             </ul>
                         </div>
                         <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center mt-n10">
@@ -629,7 +646,7 @@
                  Chile, Perú, Paraguay, Panamá, Honduras, República Dominicana, Egipto, Myanmar y Nigeria.
             </p>
             <div class="section-title">
-                <h2>Galeria</h2>
+                <h2 data-i18n="proyectos.galeria">Galeria</h2>
             </div>
             <div class="ful-img" id="fulImgBox">
                 <button class="nav-btn left" onclick="prevImg()">&#10094;</button> 
@@ -665,13 +682,13 @@
                                     CO-ABCU - Conexión de los parques eólicos Alpha y Beta a la SE Nueva Cuestecitas 500 kV 
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 5.600 MT</div>
-                                    <div><strong>Prototipo:</strong> 11</div>
+                                    <div ><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 5.600 MT</span> </div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 11</span> </div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>SADELEC ( COLOMBIA)</div>
-                                    <div><strong>Cliente:</strong>  INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 03/2024 - En curso</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span>  Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SADELEC ( COLOMBIA)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  INTERCOLOMBIA S.A. E.S.P</span> </div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 03/2024 - En curso</span> </div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -704,13 +721,13 @@
                                     PE-COYA - Enlace 500kV Mantaro - Nueva Yanango – Carapongo y Subestaciones Asociadas (proyecto Coya)
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 41 MT</div>
-                                    <div><strong>Prototipo:</strong> 1</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 41 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 1</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> SADELEC ( COLOMBIA)</div>
-                                    <div><strong>Cliente:</strong>  CONSORCIO TRANSMANTARO S.A.</div>
-                                    <div><strong>Fecha:</strong>04/2024 - En curso</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SADELEC ( COLOMBIA)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  CONSORCIO TRANSMANTARO S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2024 - En curso</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -744,13 +761,13 @@
                                 </p>
                                 <!-- <span class="card-title h5">STR 06 - Línea de transmisión Riohacha – Maicao a 110 Kv y Riohacha – Cuestecitas a 100 Kv</span> -->
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 2.300 MT</div>
-                                    <div><strong>Prototipo:</strong> 6</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> India</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong> OCHOA S.A.</div>
-                                    <div><strong>Fecha:</strong> 12/2023 - En curso</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 2.300 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 6</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span> OCHOA S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 12/2023 - En curso</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -783,13 +800,13 @@
                                     138KV SAJOMA NARANJO
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 700 MT</div>
-                                    <div><strong>Prototipo:</strong> 5</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Republica Dominicana</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>   ELECNOR DOMINICAN REPUBLIC</div>
-                                    <div><strong>Fecha:</strong> 09/2023 - En curso</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 700 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 5</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Republica Dominicana</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>   ELECNOR DOMINICAN REPUBLIC</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 09/2023 - En curso</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -822,13 +839,13 @@
                                     SOLA - Líneas de transmisión Sabanalarga - Bolívar 500KV - UPME 07 - 2017 / 
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 16.600 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 16.600 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 2</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 03/2023 - En curso</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 03/2023 - En curso</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -861,13 +878,13 @@
                                     POSTES PAAA - Supervisión en fábrica
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 230 MT</div>
-                                    <div><strong>Prototipo:</strong> 2</div>
-                                    <div><strong>Pais fabricación:</strong> china</div>
-                                    <div><strong>Pais destino:</strong> Panama</div>
-                                    <div><strong>Fabricante:</strong>HENAN DINGLI (CHINA)</div>
-                                    <div><strong>Cliente:</strong>  ELECNOR GROUP SABANITAS PANAMA</div>
-                                    <div><strong>Fecha:</strong> 11/2023 - 03/2024</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 230 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 2</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> china</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Panama</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>HENAN DINGLI (CHINA)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  ELECNOR GROUP SABANITAS PANAMA</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 11/2023 - 03/2024</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -900,13 +917,13 @@
                                     SADELEC - Servicios de supervisión de pruebas FAT
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 34 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 34 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 1</div> -->
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>SADELEC ( COLOMBIA)</div>
-                                    <div><strong>Cliente:</strong>  ELECNOR GROUP SABANITAS PANAMA</div>
-                                    <div><strong>Fecha:</strong> 12/2023 - 12/2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>SADELEC ( COLOMBIA)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  ELECNOR GROUP SABANITAS PANAMA</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 12/2023 - 12/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -939,13 +956,13 @@
                                     JVR 2023 - Control logístico de recepción de materiales
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 24.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 24.000 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 2</div> -->
                                     <!-- <div><strong>Pais fabricación:</strong> china</div> -->
-                                    <div><strong>Pais destino:</strong> Panamá, Paraguay, República Dominicana, Nigeria, Egipto, Myanmar</div>
-                                    <div><strong>Fabricante:</strong>SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>  SKIPPER LIMITED</div>
-                                    <div><strong>Fecha:</strong> 12/2023 - 12/2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Panamá, Paraguay, República Dominicana, Nigeria, Egipto, Myanmar</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 12/2023 - 12/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -978,13 +995,13 @@
                                     TCE ?-Línea de Transmisión La Virginia – Nueva Esperanza 500kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 13.675 MT</div>
-                                    <div><strong>Prototipo:</strong> 11</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</div>
-                                    <div><strong>Fecha:</strong> 05/2022 - 11/2023</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 13.675 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 11</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 05/2022 - 11/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1017,13 +1034,13 @@
                                     TCE?-Línea de Transmisión La Virginia – Nueva Esperanza 500kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 14.500 MT</div>
-                                    <div><strong>Prototipo:</strong> 3</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> TCE - Patios de recibo</div>
-                                    <div><strong>Cliente:</strong>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</div>
-                                    <div><strong>Fecha:</strong> 05/2022 - 11/2023</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 14.500 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 3</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> TCE - Patios de recibo</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 05/2022 - 11/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1058,11 +1075,11 @@
                                 <span class="card-category subtitle">
                                     <!-- <div><strong>Toneladas:</strong> 530 MT</div> -->
                                     <!-- <div><strong>Prototipo:</strong> 2</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> DECCAN (India)</div>
-                                    <div><strong>Cliente:</strong>   INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 09/2022 - 2023</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> DECCAN (India)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>   INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 09/2022 - 2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1095,13 +1112,13 @@
                                     COCU-433 - LT Copey 500 kV - Copey 220 kV - Cuestecitas 220 kV - Nueva Cuestecitas 500 kV - Fundación 220 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 2.680 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 2.680 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 11</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 10/2022 - 2023</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante" >Fabricante:</strong><span>KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 10/2022 - 2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1134,13 +1151,13 @@
                                     Línea de transmisión MANTARO - NUEVA YANANGO a 220 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 90 MT</div>
-                                    <div><strong>Prototipo:</strong> 1</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 90 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 1</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong>ELECTROCOM</div>
-                                    <div><strong>Cliente:</strong>  PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 11/2022 - 2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>ELECTROCOM</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 11/2022 - 2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1173,13 +1190,13 @@
                                     TCE?-Línea de Transmisión La Virginia – Nueva Esperanza 500kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 45 MT</div>
-                                    <div><strong>Prototipo:</strong> 1</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 45 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 1</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> DESPROING (Colombia)</div>
-                                    <div><strong>Cliente:</strong>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</div>
-                                    <div><strong>Fecha:</strong> 11/2022 - 06/2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> DESPROING (Colombia)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 11/2022 - 06/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1212,13 +1229,13 @@
                                     TCE?-Línea de Transmisión La Virginia – Nueva Esperanza 500kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 4.307 MT</div>
-                                    <div><strong>Prototipo:</strong> 55</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 4.307 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 55</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> PLP (Brasil), ASBESCO ( India), HENGTONG (China), SEDIVER (China, Italia)</div>
-                                    <div><strong>Cliente:</strong>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</div>
-                                    <div><strong>Fecha:</strong> 05/2022 - 05/2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> PLP (Brasil), ASBESCO ( India), HENGTONG (China), SEDIVER (China, Italia)</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 05/2022 - 05/2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1251,13 +1268,13 @@
                                     TRANSMISSION LINES AND TELECOMMUNICATIONS TOWERS
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 24.053 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 24.053 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 4</div> -->
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Perú, Paraguay, Chile</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Fecha:</strong> 04/2021 - 2023</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú, Paraguay, Chile</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2021 - 2023</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1291,13 +1308,13 @@
                                 </p>
                                 <!-- <span class="card-title h5">STR 06 - Línea de transmisión Riohacha – Maicao a 110 Kv y Riohacha – Cuestecitas a 100 Kv</span> -->
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 1.900 MT</div>
-                                    <div><strong>Prototipo:</strong> 11</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Paraguay</div>
-                                    <div><strong>Fabricante:</strong> KARAMTARA ENGINEERING PRIVATE LIMITED</div>
-                                    <div><strong>Cliente:</strong> CONCRET MIX S.A.</div>
-                                    <div><strong>Fecha:</strong> 10/2019 - 12/2022</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 1.900 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 11</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Paraguay</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KARAMTARA ENGINEERING PRIVATE LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span> CONCRET MIX S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 10/2019 - 12/2022</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1330,13 +1347,13 @@
                                     SABO - UPME 07 - 2017 Sabanalarga - Bolívar 500 Kv
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 2.535 MT</div>
-                                    <div><strong>Prototipo:</strong> 7</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 12/2019 - 2020 - 2022</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 2.535 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 7</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 12/2019 - 2020 - 2022</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1369,13 +1386,13 @@
                                     SOLA - LÍNEA DE TRANSMISIÓN SABANALARGA - BOLÍVAR 500KV - UPME 07 - 2017
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 16.600 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 16.600 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 11</div> -->
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>COLOMBIA</div>
-                                    <div><strong>Cliente:</strong>  INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 03/2022 - En curso</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>COLOMBIA</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 03/2022 - En curso</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1408,13 +1425,13 @@
                                     TCE ? - Línea de Transmisión 500 kV La Virginia – Nueva Esperanza
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 6.150 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 6.150 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 11</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</div>
-                                    <div><strong>Fecha:</strong> 05/2021 - 03/2022</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  TRANSMISORA COLOMBIANA DE ENERGIA S.A.S ESP</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 05/2021 - 03/2022</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1448,12 +1465,12 @@
                                 </p>
                                 <span class="card-category subtitle">
                                     <!-- <div><strong>Toneladas:</strong> 24.053 MT</div> -->
-                                    <div><strong>Prototipo:</strong> 72</div>
+                                    <div><strong data-i18n="proyectos.prototipo">Prototipo:</strong><span> 72</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> ELECTROCOM (Perú) / DERVAUX (francia) </div>
-                                    <div><strong>Cliente:</strong> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 02/2022 - 2022</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> ELECTROCOM (Perú) / DERVAUX (francia) </span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 02/2022 - 2022</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1483,13 +1500,13 @@
                                     LT Chilca – La Planicie – Carabayllo 
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 1 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 1 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 72</div> -->
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <!-- <div><strong>Fabricante:</strong> ELECTROCOM (Perú) / DERVAUX (francia)/ <div> -->
-                                    <!-- <div><strong>Cliente:</strong> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div> -->
-                                    <div><strong>Fecha:</strong> 07/2022 - 2022</div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <!-- <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong> ELECTROCOM (Perú) / DERVAUX (francia)/ <div> -->
+                                    <!-- <div><strong data-i18n="proyecto.cliente">Cliente:</strong> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div> -->
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 07/2022 - 2022</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1520,13 +1537,13 @@
                                 </p>
                                 <!-- <span class="card-title h5">STR 06 - Línea de transmisión Riohacha – Maicao a 110 Kv y Riohacha – Cuestecitas a 100 Kv</span> -->
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 530 MT</div>
-                                    <div><strong>Prototipo:</strong> 2</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 530 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 2</span></div>
                                     <!-- <div><strong>Pais fabricación:</strong> India</div> -->
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Fecha:</strong> 07/2022 - 2022</div>
-                                </span>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 07/2022 - 2022</span></div>
+                                </span> 
                                 
                                 <div class="electric-icons-container">
                                     <!-- <span class="electric-icon">
@@ -1560,12 +1577,12 @@
                                 <!-- <span class="card-title h5">STR 06 - Línea de transmisión Riohacha – Maicao a 110 Kv y Riohacha – Cuestecitas a 100 Kv</span> -->
                                 <span class="card-category subtitle">
                                     <!-- <div><strong>Toneladas:</strong> </div> -->
-                                    <div><strong>Prototipo:</strong> 44</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> KEC INTERNATIONAL LIMITED</div>
-                                    <div><strong>cliente:</strong> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 06/2019 - 07/2021</div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 44</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KEC INTERNATIONAL LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">cliente:</strong><span> PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 06/2019 - 07/2021</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1598,13 +1615,13 @@
                                     MOPA - Líneas de transmisión 220 kV Moquegua – Papujune y subestaciones asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 1.297 MT</div>
-                                    <div><strong>Prototipo:</strong> 4</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>   PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 03/2019 - 01/2020</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 1.297 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 4</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>   PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 03/2019 - 01/2020</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1637,13 +1654,13 @@
                                     PETRO - PETROPERU SE Intermedia y SE Pariñas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 530 MT</div>
-                                    <div><strong>Prototipo:</strong> 2</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>  PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 03/2019 - 2019</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 530 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 2</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 03/2019 - 2019</span></div>
                                 </span>
                                 
                                 <div class="electric-icons-container">
@@ -1678,13 +1695,13 @@
                                     STR 06 - Línea de transmisión Riohacha – Maicao a 110 Kv y Riohacha – Cuestecitas a 100 Kv
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 3,586.66 MT</div>
-                                    <div><strong>Prototipo:</strong> 11</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>  CDEM CONSORTIUM</div>
-                                    <div><strong>Fecha:</strong> 10/2018 - 12/2019</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 3,586.66 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 11</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>  CDEM CONSORTIUM</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 10/2018 - 12/2019</span></div>
                                 </span>
                                 <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1720,13 +1737,13 @@
                                     GECE - Conexión a la unidad Cegelca 3.2 al STN en la Subestación Cerromatoso 500 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 1.330 MT</div>
-                                    <div><strong>Prototipo:</strong> 6</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 02/2016 - 2016</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 1.330 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 6</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 02/2016 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1761,13 +1778,13 @@
                                     COCU - Copey 500 kV - Copey 220 kV - Cuestecitas 220 kV - Nueva Cuestecitas 500 kV - Fundación 220 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 14.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 14</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2021</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 14.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 14</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2021</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1802,13 +1819,13 @@
                                     SITU - Líneas de Transmisión a 500 kV Doble Circuito y 230 kV asociadas al Proyecto Ituango
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 500 MT</div>
-                                    <div><strong>Prototipo:</strong> 1</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong> KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2019</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 500 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 1</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2019</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1843,13 +1860,13 @@
                                     SITU - Líneas de Transmisión a 500 kV Doble Circuito y 230 kV asociadas al Proyecto Ituango
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 3.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 3.000 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 1</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong>PHOENIX STRUCTURAL AND ENGINEERING PRIVATE LIMITED / SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2017</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>PHOENIX STRUCTURAL AND ENGINEERING PRIVATE LIMITED / SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2017</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1884,13 +1901,13 @@
                                     SITU - Líneas de Transmisión a 500 kV Doble Circuito y 230 kV asociadas al Proyecto Ituango
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 3.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 3.000 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 1</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong>EROS INFRASTRUCTURE PRIVATE LIMITED / SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2017</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>EROS INFRASTRUCTURE PRIVATE LIMITED / SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2017</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1925,13 +1942,13 @@
                                     SITU - Líneas de Transmisión a 500 kV Doble Circuito y 230 kV asociadas al Proyecto Ituango
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 3.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 3.000 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 1</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong>AMITASHA ENTERPRISES PRIVATE LIMITED / SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2017</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>AMITASHA ENTERPRISES PRIVATE LIMITED / SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2017</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -1966,13 +1983,13 @@
                                     CECO - UPME 05-2014 Refuerzo Costa Caribe: Linea de Transmision Cerromatoso-Chinú-Copey - Torre Cruce de Río
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 150 MT</div>
-                                    <div><strong>Prototipo:</strong> 1</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> colombia</div>
-                                    <div><strong>Fabricante:</strong>KALPATARU POWER TRANSMISSION LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2018</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 150 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 1</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>KALPATARU POWER TRANSMISSION LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2018</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2007,13 +2024,13 @@
                                     CECO - UPME 05-2014 Refuerzo Costa Caribe: Linea de Transmision Cerromatoso-Chinú-Copey
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 17.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 6</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2019</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 17.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 6</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2019</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2048,13 +2065,13 @@
                                     COLI - Subestación Caracolí 220 kv y Líneas de Transmisión Asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 1.200 MT</div>
-                                    <div><strong>Prototipo:</strong> 6</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2017</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 1.200 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 6</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2017</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2089,13 +2106,13 @@
                                     CHUR - Proyecto Chinú - Montería - Urabá
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 3.341 MT</div>
-                                    <div><strong>Prototipo:</strong> 6</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Colombia</div>
-                                    <div><strong>Fabricante:</strong>SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCOLOMBIA S.A. E.S.P</div>
-                                    <div><strong>Fecha:</strong> 04/2016 - 2017</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 3.341 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 6</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Colombia</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span>SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCOLOMBIA S.A. E.S.P</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2016 - 2017</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2130,13 +2147,13 @@
                                     MAMO - Linea de Transmision Mantaro - Montalvo y Subestaciones Asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 46.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 46.000 MT</span></div></span>
                                     <!-- <div><strong>Prototipo:</strong> 5</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> MITAS ENERGY AND METAL CONSTRUCTION INC.</div>
-                                    <div><strong>Cliente:</strong>CONCOL - CONSULTORÍA COLOMBIANA S.A.</div>
-                                    <div><strong>Fecha:</strong> 02/2011 - 2011</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> MITAS ENERGY AND METAL CONSTRUCTION INC.</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>CONCOL - CONSULTORÍA COLOMBIANA S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 02/2011 - 2011</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2171,13 +2188,13 @@
                                     PLEX - Cardones-Polpaico 2x500 Kv
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 46.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 8</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Chile</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCHILE S.A.</div>
-                                    <div><strong>Fecha:</strong> 04/2015 - 2016</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 46.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 8</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Chile</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCHILE S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2015 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2212,13 +2229,13 @@
                                     PLEX - Encuentro - Lagunas 2x220 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 6.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 11</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Chile</div>
-                                    <div><strong>Fabricante:</strong> KEC INTERNATIONAL LIMITED</div>
-                                    <div><strong>Cliente:</strong>INTERCHILE S.A.</div>
-                                    <div><strong>Fecha:</strong> 04/2015 - 2016</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 6.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 11</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Chile</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KEC INTERNATIONAL LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>INTERCHILE S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 04/2015 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2253,13 +2270,13 @@
                                     MAMO - Linea de Transmision Mantaro - Montalvo y Subestaciones Asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 2.000 MT</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 2.000 MT</span></div>
                                     <!-- <div><strong>Prototipo:</strong> 11</div> -->
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> AMITASHA ENTERPRISES PRIVATE LIMITED / SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 09/2015 - 2016</div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> AMITASHA ENTERPRISES PRIVATE LIMITED / SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 09/2015 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2294,13 +2311,13 @@
                                     MAMO - Linea de Transmision Mantaro - Montalvo y Subestaciones Asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 10.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 9</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> KARAMTARA ENGINEERING PRIVATE LIMITED</div>
-                                    <div><strong>Cliente:</strong>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 09/2015 - 2016</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 10.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 9</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> KARAMTARA ENGINEERING PRIVATE LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 09/2015 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2335,13 +2352,13 @@
                                     MAMO - Linea de Transmision Mantaro - Montalvo y Subestaciones Asociadas
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 36.500 MT</div>
-                                    <div><strong>Prototipo:</strong> 22</div>
-                                    <div><strong>Pais fabricación:</strong> India</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> SKIPPER LIMITED</div>
-                                    <div><strong>Cliente:</strong>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</div>
-                                    <div><strong>Fecha:</strong> 09/2015 - 2016</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 36.500 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 22</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> India</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> SKIPPER LIMITED</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>PDI - INFRASTRUCTURE PROJECTS OF PERU S.A.C.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 09/2015 - 2016</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">
@@ -2376,13 +2393,13 @@
                                     LT ZAPALLAL-TRUJILLO 500 kV y conexiones a 230 kV
                                 </p>
                                 <span class="card-category subtitle">
-                                    <div><strong>Toneladas:</strong> 26.000 MT</div>
-                                    <div><strong>Prototipo:</strong> 5</div>
-                                    <div><strong>Pais fabricación:</strong> Turquía</div>
-                                    <div><strong>Pais destino:</strong> Perú</div>
-                                    <div><strong>Fabricante:</strong> MITAS ENERGY AND METAL CONSTRUCTION INC.</div>
-                                    <div><strong>Cliente:</strong>CONCOL - CONSULTORÍA COLOMBIANA S.A.</div>
-                                    <div><strong>Fecha:</strong> 02/2011 - 2011</div>
+                                    <div><strong data-i18n="proyecto.tonelada">Toneladas:</strong><span> 26.000 MT</span></div>
+                                    <div><strong data-i18n="proyecto.prototipo">Prototipo:</strong><span> 5</span></div>
+                                    <div><strong data-i18n="proyecto.paisf">Pais fabricación:</strong><span> Turquía</span></div>
+                                    <div><strong data-i18n="proyecto.paisd">Pais destino:</strong><span> Perú</span></div>
+                                    <div><strong data-i18n="proyecto.fabricante">Fabricante:</strong><span> MITAS ENERGY AND METAL CONSTRUCTION INC.</span></div>
+                                    <div><strong data-i18n="proyecto.cliente">Cliente:</strong><span>CONCOL - CONSULTORÍA COLOMBIANA S.A.</span></div>
+                                    <div><strong data-i18n="proyecto.fecha">Fecha:</strong><span> 02/2011 - 2011</span></div>
                                 </span>
                                 <!-- <div class="electric-icons-container">
                                     <span class="electric-icon">

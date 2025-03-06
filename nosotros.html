@@ -74,7 +74,7 @@
                         <ul class="nav navbar-nav navbar-nav-collapse">
                             <li class="nav-item navbar-collapse">
                                 <a href="index.html" class="nav-link ">
-                                    <span class="nav-link-name">Inicio</span>
+                                    <span class="nav-link-name" data-i18n="header.inicio">Inicio</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -83,7 +83,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="nosotros.html" class="nav-link ">
-                                    <span class="nav-link-name">Nosotros</span>
+                                    <span class="nav-link-name" data-i18n="header.nosotros">Nosotros</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -92,7 +92,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="sercicios.html" class="nav-link ">
-                                    <span class="nav-link-name">Servicios</span>
+                                    <span class="nav-link-name" data-i18n="header.servicios">Servicios</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -101,7 +101,7 @@
                             </li>
                             <li class="nav-item navbar-collapse">
                                 <a href="proyectos.html" class="nav-link ">
-                                    <span class="nav-link-name">Proyectos</span>
+                                    <span class="nav-link-name" data-i18n="header.proyecto">Proyectos</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -119,7 +119,7 @@
                             </li> -->
                             <li class="nav-item navbar-collapse">
                                 <a href="contacto.html" class="nav-link ">
-                                    <span class="nav-link-name">Contacto</span>
+                                    <span class="nav-link-name" data-i18n="header.contacto">Contacto</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none">
                                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"></path>
@@ -129,7 +129,7 @@
                             <li class="nav-item navbar-dropdown">
                                 <a href="#" class="nav-link">
                                     <!-- <img src="assets/images/globo.png" alt="" style="width: 18px;"> -->
-                                    <span class="nav-link-name">Idioma</span>
+                                    <span class="nav-link-name" data-i18n="header.idioma">Idioma</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" class="language-switch" data-lang="es">
@@ -150,20 +150,37 @@
                 <div class="col-12 col-md-3 col-lg-4 col-xl-3 text-white">
                     <div class="navbar-footer">
                         <div class="mb-60">
-                            <p class="lead mb-17 font-weight-medium">Información de contacto:</p>
+                            <p class="lead mb-17 font-weight-medium" data-i18n="contacto.informacion">Información de contacto:</p>
                             <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">Email: <a href="mailto:info@consorcioqutubminar.com"
-                                        style="color: white">info@consorcioqutubminar.com</a>
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope icon-hover flex-shrink-0"></i> 
+                                    <a href="mailto:info@consorcioqutubminar.com?subject=Test%20Address%20Email" style="font-size: 1.1rem; color: white;">info@consorcioqutubminar.com</a>
                                 </li>
-                                <li class="list-group-item">Telefono: <a href="callto:+573044003622"
-                                        style="color: white">+57 304 400 3622</a>
-                                </li>
+                                <div>
+                                    <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                    <a href="callto:+573124868490" style="font-size: 1.1rem; color: white;">+57 312 486 8490</a>
+                                </div>
+                                <div>
+                                    <i class="bi bi-telephone icon-hover flex-shrink-0"></i>
+                                    <a href="callto:+573228469582" style="font-size: 1.1rem; color: white;">+57 322 846 9582</a>
+                                </div>
+                                
                             </ul>
                         </div>
                         <div class="mb-60">
-                            <p class="lead mb-17 font-weight-medium">Dirección:</p>
-                            <ul class="list-group borderless font-size-17">
-                                <li class="list-group-item">Cajica</li>
+                            <p class="lead mb-17 font-weight-medium" data-i18n="contacto.direccion">Dirección:</p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem;  color: white; line-height: 1.2;">
+                                    <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                    Balcones de Buena Vista CS9, Cajicá, Colombia.
+                                </li>
+                            </ul> 
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center" style="font-size: 1.1rem;  color: white; line-height: 1.2;">
+                                    <i class="bi bi-geo-alt icon-hover " style="margin-right: 5px;"></i>
+                                    USES. 15231 SW 26 TERRACE, MIAMI, FL. US 33185
+                                </li>
                             </ul>
                         </div>
                         <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center mt-n10">
@@ -256,7 +273,7 @@
 
                                         <!-- Contenido colapsable -->
                                         <div class="collapse multi-collapse" id="multiCollapse">
-                                            <p style="text-align: justify; font-size: 1.1rem;" data-i18n="nosotros.texto2">
+                                            <p style="text-align: justify; font-size: 1.1rem;" data-i18n="nosotros.text2">
                                                 A través de un sistema innovador que optimiza la previsibilidad en la
                                                 cadena
                                                 logística,
@@ -427,7 +444,7 @@
             <div class="container">
                 <div class="row gy-5 align-items-center">
                     <div class="section-title col-12 text-center text-sm-start">
-                        <h2 class="display-4 mt-3 mb-3" data-i18n="nosotros.certificaciones">Certificaciones</h2>
+                        <h2 class="display-4 mt-3 mb-3" data-i18n="nosotros.certficiaciones">Certificaciones</h2>
                     </div>
                     <div class="col-12 col-lg-5 d-flex mr-40 flex-column justify-content-center">
                         <div class="feature pb-5">
@@ -478,7 +495,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Jorge Villate Castillo</h4>
-                                        <span>CEO</span>
+                                        <span data-i18n="nosotros.equipo1">CEO</span>
                                     </div>
                                 </div>
                             </div>
@@ -494,7 +511,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Jorge Villate Isaza</h4>
-                                        <span>Gerente de proyecto</span>
+                                        <span data-i18n="nosotros.equipo2">Gerente de proyecto</span>
                                     </div>
                                 </div>
                             </div>
@@ -510,7 +527,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Jose Alejandro Villate Isaza</h4>
-                                        <span>Gerente de ingenieria</span>
+                                        <span data-i18n="nosotros.equipo3">Gerente de ingenieria</span>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +543,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Julian Camilo Villate Isaza</h4>
-                                        <span>Arquitecto y gerente comercial</span>
+                                        <span data-i18n="nosotros.equipo4">Arquitecto y gerente comercial</span>
                                     </div>
                                 </div>
                             </div>
@@ -542,7 +559,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Juan Manuel Villate Isaza</h4>
-                                        <span>Desarrollador Senior</span>
+                                        <span data-i18n="nosotros.equipo5">Desarrollador Senior</span>
                                     </div>
                                 </div>
                             </div>
@@ -565,7 +582,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Andrés Felipe Delgado</h4>
-                                        <span>Arquitecto de software</span>
+                                        <span data-i18n="nosotros.equipo6">Arquitecto de software</span>
                                     </div>
                                 </div>
                             </div>
@@ -581,7 +598,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Francisco José Mahecha Ruiz</h4>
-                                        <span>Desarrollador junior</span>
+                                        <span data-i18n="nosotros.equipo7">Desarrollador junior</span>
                                     </div>
                                 </div>
                             </div>
@@ -597,7 +614,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Andres Gutierrez</h4>
-                                        <span>Administrador de proyectos</span>
+                                        <span data-i18n="nosotros.equipo8">Administrador de proyectos</span>
                                     </div>
                                 </div>
                             </div>
@@ -613,7 +630,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Cesar Robles</h4>
-                                        <span>Supervisor Operativo</span>
+                                        <span data-i18n="nosotros.equipo9">Supervisor Operativo</span>
                                     </div>
                                 </div>
                             </div>
@@ -645,7 +662,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Luis Miguel Enciso Piza</h4>
-                                        <span>Auxiliar de ingeniería</span>
+                                        <span data-i18n="nosotros.equipo10">Auxiliar de ingeniería</span>
                                     </div>
                                 </div>
                             </div>
@@ -661,7 +678,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Andrea Torres Rincón</h4>
-                                        <span>Auxiliar de ingeniería</span>
+                                        <span data-i18n="nosotros.equipo10">Auxiliar de ingeniería</span>
                                     </div>
                                 </div>
                             </div>
@@ -677,7 +694,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Sara Vertel Benitez</h4>
-                                        <span>Coordinadora HSEQ</span>
+                                        <span data-i18n="nosotros.equipo11">Coordinadora HSEQ</span>
                                     </div>
                                 </div>
                             </div>
@@ -693,7 +710,7 @@
                                     </div>
                                     <div class="member-info">
                                         <h4>Diana Carolina Carpio</h4>
-                                        <span>Asistente HSEQ</span>
+                                        <span data-i18n="nosotros.equipo12">Asistente HSEQ</span>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ function loadHTML(file, containerId, callback) {
         .then((html) => {
             if (html) {
                 document.getElementById(containerId).innerHTML = html;
-                if (callback) callback(); 
+                if (callback) callback();
             }
         })
         .catch((error) => console.error(`Error en fetch: ${error}`));
@@ -28,7 +28,8 @@ const countryLanguageMap = {
     "de": "de", // Alemania
     "pt": "pt", // Portugal
 };
-let translations = {}; 
+
+let translations = {};
 
 const loadTranslations = async (lang) => {
     try {
@@ -38,15 +39,16 @@ const loadTranslations = async (lang) => {
             return await response.json();
         } else {
             console.error(`Error al cargar el archivo de traducción: translations/${lang}.json`);
-            return {}; 
+            return {};
         }
     } catch (error) {
         console.error(`Error al obtener el archivo de traducción: ${error}`);
-        return {}; 
+        return {};
     }
 };
 
 let elementsToTranslate = [];
+
 function updateElementsToTranslate() {
     elementsToTranslate = document.querySelectorAll('[data-i18n]');
 }
@@ -57,7 +59,11 @@ const translatePage = (translations) => {
         const key = element.getAttribute('data-i18n');
         const translation = translations[key] || translations['en']?.[key];
         if (translation) {
-            element.innerHTML  = translation;
+            if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+                element.setAttribute("placeholder", translation);
+            } else {
+                element.innerHTML = translation;
+            }
         }
     });
 };
@@ -70,8 +76,7 @@ const detectarIdiomaPorLocalizacion = async () => {
             const obtenerCodigo = convertir.countryCode.toLowerCase();
             console.log("Código de país detectado:", obtenerCodigo);
 
-            const idiomaDetectado = countryLanguageMap[obtenerCodigo] || "en";
-            return idiomaDetectado;
+            return countryLanguageMap[obtenerCodigo] || "en";
         } else {
             console.error("Error al obtener la localización");
             return "en";
@@ -82,11 +87,18 @@ const detectarIdiomaPorLocalizacion = async () => {
     }
 };
 
-// Inicializar la página
+// Inicializar la página con el idioma guardado o detectado
 const cargarPagina = async () => {
-    const defaultLang = await detectarIdiomaPorLocalizacion();
-    translations = await loadTranslations(defaultLang); 
-    translatePage(translations); 
+    let idiomaGuardado = localStorage.getItem("idiomaSeleccionado");
+
+    if (!idiomaGuardado) {
+        idiomaGuardado = await detectarIdiomaPorLocalizacion();
+        localStorage.setItem("idiomaSeleccionado", idiomaGuardado); 
+    }
+
+    translations = await loadTranslations(idiomaGuardado);
+    updateElementsToTranslate();
+    translatePage(translations);
 };
 
 // Función para el desplazamiento suave
@@ -105,27 +117,30 @@ const setupSmoothScrolling = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const defaultLang = await detectarIdiomaPorLocalizacion();
-    translations = await loadTranslations(defaultLang); 
+    await cargarPagina(); 
 
-    loadHTML("header.html", "header-container", () => {
+    loadHTML("header.html", "header-container", async () => {
         updateElementsToTranslate();
-        translatePage(translations); 
+        translatePage(translations);
 
         const languageButtons = document.querySelectorAll('.language-switch');
         languageButtons.forEach((btn) => {
             btn.addEventListener('click', async (e) => {
                 e.preventDefault();
                 const selectedLang = e.target.dataset.lang;
-                translations = await loadTranslations(selectedLang); 
-                translatePage(translations); 
+
+                localStorage.setItem("idiomaSeleccionado", selectedLang);
+
+                translations = await loadTranslations(selectedLang);
+                updateElementsToTranslate();
+                translatePage(translations);
             });
         });
     });
-    // Carga el footer
+
     loadHTML("footer.html", "footer-container", () => {
         updateElementsToTranslate();
-        translatePage(translations); 
+        translatePage(translations);
     });
 });
 
