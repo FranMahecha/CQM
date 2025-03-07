@@ -13,13 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
         let count = 0;
 
         // 🔹 Ajuste dinámico del incremento
-        let increment;
+        let increment, speed;
         if (target < 100) {
             increment = 1;
+            speed = 100;
         } else if (target < 1000) {
-            increment = Math.ceil(target / 100);
+            increment = Math.ceil(target / 50);
+            speed = 80;
         } else {
-            increment = Math.ceil(target / 300);
+            increment = Math.ceil(target / 50);
+            speed = 50;
         }
 
         const updateCounter = () => {

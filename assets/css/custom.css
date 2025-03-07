@@ -413,13 +413,18 @@ section {
     text-align: justify;
   }
   .section-title h2 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
     padding: 0 10px;
   }
   .section-title h2::before,
   .section-title h2::after {
     width: 4px;
+  }
+  .descripcion {
+    margin-top: 50px;
+    margin-left: -20px;
+    margin-bottom: -30px;
   }
 }
 /* ----------------------------------------------------------------------- */
@@ -604,7 +609,16 @@ section {
   background: rgba(var(--color_37), 0.3);
   pointer-events: none;
 }
-
+.overlay {
+  --color_37: 0, 0, 0; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color_37), 0.5);
+  pointer-events: none;
+}
 
 
 
@@ -693,9 +707,21 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  margin-top: 50px;
+  margin-top: 20px;
   padding-bottom: 50px;
   margin-left: 50px;
+  position: relative; 
+  overflow: hidden; 
+}
+.form-card2::before {
+  content: "";
+  position: absolute;
+  background: rgba(60, 97, 173, 0.3); 
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 .form-card2:hover {
   box-shadow: 0 0 24px #000;
@@ -727,9 +753,15 @@ section {
 button.btn-dark2 {
   border-radius: 5px;
   padding: 10px 20px;
-  background-color: #000;
-  margin-left: 350px;
+  background: rgba(60, 97, 173, 0.3); 
+  margin-left: 280px;
   margin-bottom: -40px;
+  color: black !important;
+  
+}
+button.btn-dark2:hover {
+  background: #3498db;
+  color: white !important; 
 }
 
 
@@ -739,8 +771,12 @@ button.btn-dark2 {
 /* .photo2 {
   display: none !important;
 } */
+ .foter {
+  margin-top: 120px !important;
+ }
 
 @media (max-width: 429px) {
+
   .section-title2 h2 {
     font-size: 32px;
     font-weight: bold;
@@ -951,9 +987,14 @@ button.btn-dark2 {
   .form-card2 {
     margin-left: 0;  
     margin-right: 0;
-    padding: 15px;  
-    width: 90%;   
-    margin: 20px auto; 
+    padding: 20px;  
+    max-width: none;
+    margin-top: -80px; 
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    font-size: 0.8rem; /* Ajuste de fuente */
   }
 
   button.btn-dark2 {
@@ -974,13 +1015,13 @@ button.btn-dark2 {
 @media (max-width: 517px) { 
 
   button.btn-dark2 {
-    margin-left: 70px;      
+    margin-left: 45px;      
     text-align: center;
     display: block;
     height: 20px; 
     padding: 2px 10px;
     font-size: 12px;
-    margin-bottom: -25px;
+    margin-bottom: -45px;
 }
 }
 
@@ -1114,7 +1155,7 @@ button.btn-dark2 {
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -1144,6 +1185,9 @@ button.btn-dark2 {
   height: 100%;
   border-radius: 0px;
   
+}
+.services .icon-box:hover {
+  box-shadow: 0 0 28px #000;
 }
 
 .services .icon {
@@ -1491,11 +1535,25 @@ button.btn-dark2 {
 }
 .form-card {
   background-color: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
+  position: relative;
+  overflow: hidden;
 }
+
+.form-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(60, 97, 173, 0.3); 
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
 .form-card:hover {
   box-shadow: 0 0 28px #000;
 }
@@ -1510,6 +1568,12 @@ button.btn-dark2 {
 button.btn-dark {
   border-radius: 5px;
   padding: 10px 20px;
+  background: rgba(60, 97, 173, 0.3); 
+  color: black;
+}
+
+button.btn-dark:hover {
+  background: #3498db; 
 }
 
 

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         grabCursor: true,
         autoplay: {
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
         },
         loopFillGroupWithBlank: true, 
@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         grabCursor: true,
         autoplay: {
-            delay: 1500,
+            delay: 2000,
             disableOnInteraction: false,
+            reverseDirection: true,
         },
         loopFillGroupWithBlank: true, 
         breakpoints: {
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         grabCursor: true,
         autoplay: {
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
         },
         loopFillGroupWithBlank: true, 
@@ -54,8 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         grabCursor: true,
         autoplay: {
-            delay: 1500,
+            delay: 2000,
             disableOnInteraction: false,
+            reverseDirection: true,
         },
         loopFillGroupWithBlank: true, 
         breakpoints: {

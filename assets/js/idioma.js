@@ -124,13 +124,25 @@ document.addEventListener("DOMContentLoaded", async () => {
         translatePage(translations);
 
         const languageButtons = document.querySelectorAll('.language-switch');
+        const languageIcon = document.getElementById("language-icon");
+
+        let idiomaGuardado = localStorage.getItem("idiomaSeleccionado");
+        if (idiomaGuardado) {
+            const selectedButton = document.querySelector(`.language-switch[data-lang="${idiomaGuardado}"]`);
+            if (selectedButton) {
+                const iconSrc = selectedButton.getAttribute("data-icon");
+                languageIcon.src = iconSrc;
+            }
+        }
+
         languageButtons.forEach((btn) => {
             btn.addEventListener('click', async (e) => {
                 e.preventDefault();
-                const selectedLang = e.target.dataset.lang;
-
+                const selectedLang = btn.dataset.lang;
+                const selectedIcon = btn.dataset.icon;
                 localStorage.setItem("idiomaSeleccionado", selectedLang);
-
+                localStorage.setItem("idiomaIcono", selectedIcon);
+                languageIcon.src = selectedIcon;
                 translations = await loadTranslations(selectedLang);
                 updateElementsToTranslate();
                 translatePage(translations);
@@ -143,4 +155,5 @@ document.addEventListener("DOMContentLoaded", async () => {
         translatePage(translations);
     });
 });
+
 

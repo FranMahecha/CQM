@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollWheelZoom: true,
         doubleClickZoom: false,
         touchZoom: false,
-        zoomControl: false
+        zoomControl: false,
+        maxBounds: [
+            [-60, -180], // Límite suroeste (latitud, longitud)
+            [80, 180]    // Límite noreste (latitud, longitud)
+        ],
+        maxBoundsViscosity: 1.0 
     });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
