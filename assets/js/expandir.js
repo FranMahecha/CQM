@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         fulImg.src = imgGallery[currentIndex].src;
+        const projectCard = imgGallery[currentIndex].closest(".card-portfolio");
     }
 
     window.openFulImg = openFulImg;

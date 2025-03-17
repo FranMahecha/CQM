@@ -5,6 +5,9 @@
     "header.proyecto": "Projetos",
     "header.contacto": "Contato",
     "header.idioma": "linguagem",
+    "header.inicios": "Conecte-se",
+    "header.inicio.cqm": "Gestão de projetos",
+    "header.inicio.finanzas": "Financiar",
 
     "footer.titulo": "Consorcio Qutub Minar S.A.S",
     "footer.slogan": "Construir o futuro com fornecimentos seguros e fiáveis  ​​para grandes projetos de infraestruturas nas Américas",
@@ -70,7 +73,7 @@
 
 
     "proyectos.clientes": "Clientes",
-    "proyectos.fabricantes": "Fabricantes",
+    "proyectos.fabricantes": "Fabricantes e parceiros",
     "proyectos.etapa": "Etapas do projeto",
     "proyectos.etapa1": "Projeto estrutural",
     "proyectos.etapa2": "Revisão de design",

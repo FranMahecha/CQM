@@ -90,16 +90,21 @@ const detectarIdiomaPorLocalizacion = async () => {
 // Inicializar la página con el idioma guardado o detectado
 const cargarPagina = async () => {
     let idiomaGuardado = localStorage.getItem("idiomaSeleccionado");
-
-    if (!idiomaGuardado) {
-        idiomaGuardado = await detectarIdiomaPorLocalizacion();
-        localStorage.setItem("idiomaSeleccionado", idiomaGuardado); 
+    const idiomasDisponibles = ["es", "en", "fr", "de", "pt"];
+    if (!idiomaGuardado || !idiomasDisponibles.includes(idiomaGuardado)) {
+        const idiomaNavegador = navigator.language || navigator.userLanguage;
+        const idiomaDetectado = idiomaNavegador.split('-')[0]; 
+        idiomaGuardado = idiomasDisponibles.includes(idiomaDetectado) ? idiomaDetectado : "en";
+        localStorage.setItem("idiomaSeleccionado", idiomaGuardado);
     }
-
+    console.log(`Idioma seleccionado: ${idiomaGuardado}`);
     translations = await loadTranslations(idiomaGuardado);
     updateElementsToTranslate();
     translatePage(translations);
 };
+
+
+
 
 // Función para el desplazamiento suave
 const setupSmoothScrolling = () => {

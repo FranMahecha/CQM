@@ -5,6 +5,9 @@
     "header.proyecto": "Projekte",
     "header.contacto": "Kontakt",
     "header.idioma": "Sprache",
+    "header.inicios": "Login",
+    "header.inicio.cqm": "Projektmanagement",
+    "header.inicio.finanzas": "Finanzen",
 
     "footer.titulo": "Consorcio Qutub Minar S.A.S",
     "footer.slogan": "Bauen Sie die Zukunft mit sicheren und zuverlässigen Lieferungen für große Infrastrukturprojekte in Nord- und Südamerika",
@@ -69,7 +72,7 @@
     "nosotros.equipo12": "HSEQ-Assistent",
 
     "proyectos.clientes": "Kunden",
-    "proyectos.fabricantes": "Hersteller",
+    "proyectos.fabricantes": "Hersteller und Partner",
     "proyectos.etapa": "Projektphasen",
     "proyectos.etapa1": "Strukturelles Design",
     "proyectos.etapa2": "Designprüfung",
