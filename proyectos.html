@@ -27,6 +27,16 @@
     <!-- END: Styles -->
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <!-- GOOGLE ANALITICS -->
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P49WXJRGWD"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+ 
+         gtag('config', 'G-P49WXJRGWD');
+     </script>
 </head>
 <body>
     <header class="navbar navbar-top navbar-expand-lg navbar-fixed navbar-dark">
@@ -2430,6 +2440,10 @@
                 </div>
             </div>
         </div>
+        <a class="custom-float" target="_blank">
+            <img id="iso" src="assets/images/SELLO_SISTEMA_CERTIFICADO_9001_SM_RGB.png" alt="Logo">
+            <span class="certificacion text-center" data-i18n="servicio.certificados">CERTIFICADOS CON <br> ISO 9001:2015</span>
+        </a>
         <div class="swiper-slide"
         style="background-color: black; height: 670px; transform: translate3d(0px, 120px, -1200px) rotateX(0deg) rotateY(0deg); z-index: -11; transition-duration: 0ms;">
         <div class="card-wrapper h-100">
@@ -2478,6 +2492,8 @@
      <!-- Mapa -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="assets/js/mapa.js"></script>
+        <!-- ISO -->
+        <script src="assets/js/iso.js"></script>
     <!-- END: Scripts -->
 </body>
 
