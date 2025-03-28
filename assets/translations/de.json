@@ -7,10 +7,10 @@
     "header.idioma": "Sprache",
     "header.inicios": "Login",
     "header.inicio.cqm": "Projektmanagement",
-    "header.inicio.finanzas": "Finanzen",
+    "header.inicio.finanzas": "Verwaltung",
 
     "footer.titulo": "Consorcio Qutub Minar S.A.S",
-    "footer.slogan": "Bauen Sie die Zukunft mit sicheren und zuverlässigen Lieferungen für große Infrastrukturprojekte in Nord- und Südamerika",
+    "footer.slogan": "Die Zukunft gestalten mit sicheren und zuverlässigen Lieferungen für große Infrastrukturprojekte weltweit",
     "footer.suscribete": "Abonniere unseren Newsletter",
     "footer.correo": " Ihre E-Mail",
     "footer.boton": "Senden",
@@ -41,7 +41,7 @@
     "inicio.form.mensaje": "Nachricht",
     "inicio.form.boton.enviar": "Nachricht senden",
 
-    "nosotros.slogan": "Bauen Sie die Zukunft mit sicheren und zuverlässigen Lieferungen für große Infrastrukturprojekte in Amerika",
+    "nosotros.slogan": "Die Zukunft gestalten mit sicheren und zuverlässigen Lieferungen für große Infrastrukturprojekte weltweit",
     "nosotros.titulo": "Wer sind wir?",
     "nosotros.texto": "Qutub Minar Consortium ist ein auf Inspektion und Logistik spezialisiertes Unternehmen, das sich der Koordination, Planung, Kontrolle und Überwachung jeder Phase des Beschaffungsprozesses widmet. Von der Konstruktion und Fertigung bis hin zum Testen, Versand, Verfolgen und Empfangen von Materialien gewährleisten wir die Einhaltung der höchsten Qualitäts- und Effizienzstandards.",
     "nosotros.text2": "Mithilfe eines innovativen Systems, das die Vorhersehbarkeit in der Logistikkette optimiert, arbeitet unser Team länderübergreifend und integriert und nutzt unser globales Netzwerk, um die Produktivität zu steigern, Kosten zu senken und zum Erfolg unserer Kunden beizutragen. Unser Engagement für Spitzenleistungen spiegelt sich in der Qualität unserer Dienstleistungen wider. Geleitet werden wir von einer Philosophie der effizienten Ausführung und einer Leidenschaft, die uns in der Branche auszeichnet. <br>Wir handeln transparent und integer und bauen Vertrauensbeziehungen zu Kunden, Mitarbeitern und Lieferanten auf. Die Agilität und Schnelligkeit unseres Managements ermöglichen es uns, wirksame Lösungen anzubieten und so solide und nachhaltige Geschäftsbeziehungen zu stärken. Unsere Erfolgsbilanz und Werte sind die Grundlage für das Vertrauen unserer Kunden in uns.",
@@ -96,7 +96,7 @@
 "servicio.software5": "Wir entwickeln maßgeschneiderte technologische Lösungen mit modularen Architekturen und optimieren die Softwareentwicklung durch Innovation und Fachwissen.",
 "servicio.software6": "Wir setzen Scrum ein, um schnelle Ergebnisse zu liefern und uns flexibel an dynamische Umgebungen anzupassen.",
 "servicio.software7": "Wir sind strategische Partner in der Anwendungsentwicklung und verwandeln geschäftliche Herausforderungen in effiziente und rentable technologische Lösungen.",
-"servicio.certificados": "ZERTIFIZIERT MIT <br> ISO 9001:2015",
+"servicio.certificados": "ZERTIFIZIERUNG <br> ISO 9001:2015",
 
 
     "proyectos.clientes": "Kunden",
@@ -112,7 +112,7 @@
     "proyectos.etapa8": "Werkstofftypprüfungen",
     "proyectos.etapa9": "Fabrikaudits",
     "proyectos.proyecto": "Projekte",
-    "proyectos.texto": "Effizienz und Qualität in jedem Projekt. Mit der idealen Kombination aus Erfahrung und globalen Ressourcen garantieren wir die optimale Entwicklung jedes Projekts. Wir sind spezialisiert auf Design, Designprüfung, Herstellung, Versand und Empfang von Materialien, Überwachung von Qualitätstests, Prototypenprüfung, Fertigungsgenehmigung, Transportlogistik und Dokumentenmanagement. Wir haben in Kolumbien, Indien, China, Italien und Brasilien hergestellte Strukturen für Projekte in Kolumbien, Chile, Peru, Paraguay, Panama, Honduras, der Dominikanischen Republik, Ägypten, Myanmar und Nigeria verwaltet.",
+    "proyectos.texto": "Effizienz und Qualität in jedem Projekt. Wir gewährleisten die optimale Entwicklung jedes Projekts durch die ideale Kombination aus Erfahrung und globalen Ressourcen. Wir sind spezialisiert auf Design, Designprüfung, Fertigung, Versand und Empfang von Materialien, Überwachung von Qualitätstests, Prototypenprüfung, Fertigungsfreigabe, Transportlogistik und Dokumentenmanagement. Wir haben Strukturen in mehr als 17 Ländern verwaltet",
     "proyectos.galeria": "Galerie",
     "proyecto.tonelada": "Tonnen:",
     "proyecto.prototipo": "Prototypen:",
