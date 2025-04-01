@@ -45,6 +45,9 @@
     "nosotros.titulo": "Wer sind wir?",
     "nosotros.texto": "Qutub Minar Consortium ist ein auf Inspektion und Logistik spezialisiertes Unternehmen, das sich der Koordination, Planung, Kontrolle und Überwachung jeder Phase des Beschaffungsprozesses widmet. Von der Konstruktion und Fertigung bis hin zum Testen, Versand, Verfolgen und Empfangen von Materialien gewährleisten wir die Einhaltung der höchsten Qualitäts- und Effizienzstandards.",
     "nosotros.text2": "Mithilfe eines innovativen Systems, das die Vorhersehbarkeit in der Logistikkette optimiert, arbeitet unser Team länderübergreifend und integriert und nutzt unser globales Netzwerk, um die Produktivität zu steigern, Kosten zu senken und zum Erfolg unserer Kunden beizutragen. Unser Engagement für Spitzenleistungen spiegelt sich in der Qualität unserer Dienstleistungen wider. Geleitet werden wir von einer Philosophie der effizienten Ausführung und einer Leidenschaft, die uns in der Branche auszeichnet. <br>Wir handeln transparent und integer und bauen Vertrauensbeziehungen zu Kunden, Mitarbeitern und Lieferanten auf. Die Agilität und Schnelligkeit unseres Managements ermöglichen es uns, wirksame Lösungen anzubieten und so solide und nachhaltige Geschäftsbeziehungen zu stärken. Unsere Erfolgsbilanz und Werte sind die Grundlage für das Vertrauen unserer Kunden in uns.",
+    "nosotros.titulo2": "Qutub Minar Inc",
+    "nosotros.texto2": "Qutub Minar Inc (USA) ist Teil der Qutub Minar Konsortiumsgruppe, einem führenden Unternehmen, das in Kolumbien gegründet wurde, um Sicherheit und Zuverlässigkeit bei der Lieferung von Materialien für große Infrastrukturprojekte in Amerika zu gewährleisten. Im Laufe der Zeit haben wir unsere Unterstützung und Aktivitäten auf Dienstleistungen ausgeweitet, die Beschaffungsprozesse durch Effizienz und Innovation erleichtern und verbessern.",
+    "nosotros.text22": "Heute sind wir ein Maßstab für Inspektion und Logistik und verbinden Kunden in Amerika mit Lieferanten in Indien, um profitable und qualitativ hochwertige Geschäfte in beiden Regionen zu ermöglichen.",
     "nosotros.misiontitulo": "Mission",
     "nosotros.visiontitulo": "Vision",
     "nosotros.mision": "CONSORCIO QUTUB MINAR SAS ist ein landesweit operierendes Unternehmen, das Überwachungs- und Logistikkontrolldienste für die Versorgung mit Produkten und Materialien in den Bereichen Tiefbau, Elektrotechnik, Telekommunikation, Metallverarbeitung und anderen Ingenieurssektoren anbietet und dafür Lösungen schafft und Projekte auf der ganzen Welt verbessert.",
@@ -66,7 +69,7 @@
     "nosotros.equipo6": "Softwarearchitekt",
     "nosotros.equipo7": "Junior Entwickler",
     "nosotros.equipo8": "Koordinator für Verwaltung, Finanzen <br> und Personalwesen",
-    "nosotros.equipo9": "Betriebsleiter",
+    "nosotros.equipo9": "Nationaler Logistikkoordinato",
     "nosotros.equipo10": "Ingenieurassistent",
     "nosotros.equipo11": "HSEQ-Koordinator",
     "nosotros.equipo12": "HSEQ-Assistent",
@@ -100,7 +103,8 @@
 
 
     "proyectos.clientes": "Kunden",
-    "proyectos.fabricantes": "Hersteller und Partner",
+    "proyectos.fabricantes": "Hersteller",
+    "proyectos.partners": "Partner",
     "proyectos.etapa": "Projektphasen",
     "proyectos.etapa1": "Strukturelles Design",
     "proyectos.etapa2": "Designprüfung",

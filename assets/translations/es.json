@@ -69,7 +69,7 @@
     "nosotros.equipo6": "Arquitecto de software",
     "nosotros.equipo7": "Desarrollador junior",
     "nosotros.equipo8": "Coordinador Administrativo, Financiero <br> y de Talento Humano",
-    "nosotros.equipo9": "Supervisor Operativo",
+    "nosotros.equipo9": "Coordinador Logístico Nacional",
     "nosotros.equipo10": "Auxiliar de ingeniería",
     "nosotros.equipo11": "Coordinadora HSEQ",
     "nosotros.equipo12": "Asistente HSEQ",
@@ -103,7 +103,8 @@
 
 
     "proyectos.clientes": "Clientes",
-    "proyectos.fabricantes": "Fabricantes y partners",
+    "proyectos.fabricantes": "Fabricantes",
+    "proyectos.partners": "Partners",
     "proyectos.etapa": "Etapas del Proyecto",
     "proyectos.etapa1": "Diseño estructural",
     "proyectos.etapa2": "Revisión de diseño",
