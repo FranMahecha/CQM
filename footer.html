@@ -23,10 +23,10 @@
             <!-- <div class="d-none d-lg-block col-2"></div> -->
             <div class="col-lg-8">
                 <p class="subtitle mb-30 text-muted" data-i18n="footer.suscribete">Suscríbete a nuestro boletín</p>
-                <form action="https://formspree.io/f/mzzzzgzo" method="POST" class="form-footer">
+                <form id="contact-form2" action="https://formspree.io/f/meoaraez" method="POST" class="form-footer">
                     <div class="form-group-overlay">
-                        <input class="form-control form-control-white" type="email" placeholder="Tu correo *" data-i18n="footer.correo">
-                        <button type="submit" class="btn btn-clean  text-white" ><span data-i18n="footer.boton">Enviar</span></button>
+                        <input class="form-control form-control-white" type="email" name="email" placeholder="Tu correo *" data-i18n="footer.correo" required>
+                        <button type="submit" id="enviar" class="btn btn-clean  text-white" ><span data-i18n="footer.boton">Enviar</span></button>
                     </div>
                     
                 </form>
@@ -66,7 +66,7 @@
                         <ul class="nav flex-column text-white">
                             <li class="nav-item"><a href="contacto.html" class="nav-link" data-i18n="footer.contacto">Contacto</a></li>
                             <li class="nav-item navbar-dropdown">
-                                <a href="clientes.html" class="nav-link">
+                                <a class="nav-link">
                                     <span class="nav-link-name" data-i18n="header.inicios">inicio de sesion</span>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -104,4 +104,6 @@
             
         </div>
     </div>
+    <!-- Form -->
+    <script src="assets/js/form.js"></script>
 </footer>
