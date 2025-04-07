@@ -66,4 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
             1024: { slidesPerView: 3 }
         }
     });
+    var swiper9 = new Swiper("#swiper9", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+            520: { slidesPerView: 1 },
+            828: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 }
+        }
+    });
+    
 });
