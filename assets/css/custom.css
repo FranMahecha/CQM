@@ -1295,8 +1295,8 @@ button.btn-dark2:hover {
 /* Boton video de sileciar */
 .mute-btn {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 40px;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
